@@ -117,7 +117,7 @@ export default function HomePage() {
   const [openFaqIndex, setOpenFaqIndex] = useState(0);
 
   useEffect(() => {
-    document.title = 'VEDANTA INSTITUTE | We Guide You to Achieve – Chase Excellence | Udhampur';
+    document.title = 'VEDANTA INSTITUTE – OFFICIAL EDUCATIONAL WEBSITE | We Guide You to Achieve – Chase Excellence';
   }, []);
 
   const categories = [
