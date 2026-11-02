@@ -160,13 +160,13 @@ export default function FacilitiesPage() {
   return (
     <div className="pb-20">
       {/* Header Banner */}
-      <section className="hero-mesh text-white py-16 border-b-4 border-[#E4E4E7]">
+      <section className="hero-mesh text-white py-16 border-b-4 border-[#D6B66B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#D6B66B] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
             Student-Centric Infrastructure & Pedagogy
           </span>
           <h1 className="font-serif-display text-4xl sm:text-5xl font-extrabold mt-4">
-            Our <span className="text-[#E4E4E7]">Facilities & Learning Ecosystem</span>
+            Our <span className="text-[#D6B66B]">Facilities & Learning Ecosystem</span>
           </h1>
           <p className="text-white/85 text-base sm:text-lg max-w-3xl mt-3 leading-relaxed">
             At Vedanta Institute, we provide a complete academic support system — combining qualified teachers, updated study materials, regular evaluations, doubt-clearing sessions, and home tuition facilities.
@@ -185,13 +185,13 @@ export default function FacilitiesPage() {
                 className="card-elevated rounded-2xl bg-white overflow-hidden flex flex-col justify-between"
               >
                 {/* Card Top Visual Accent Header */}
-                <div className="bg-gradient-to-r from-[#09090B] to-[#27272A] px-6 py-4 text-white flex items-center justify-between">
+                <div className="bg-gradient-to-r from-[#09090B] to-[#8C702B] px-6 py-4 text-white flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-[#E4E4E7] text-[#09090B] flex items-center justify-center shrink-0 shadow-sm">
+                    <div className="w-10 h-10 rounded-xl bg-[#D6B66B] text-[#09090B] flex items-center justify-center shrink-0 shadow-sm">
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <span className="text-[11px] font-bold uppercase tracking-wider text-[#E4E4E7]">
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-[#D6B66B]">
                         {fac.tag}
                       </span>
                       <h2 className="font-serif-display text-lg sm:text-xl font-bold text-white">
@@ -216,7 +216,7 @@ export default function FacilitiesPage() {
                         key={i}
                         className="flex items-start gap-2.5 text-xs sm:text-sm font-medium text-[#09090B]/85"
                       >
-                        <CheckCircle2 className="w-4 h-4 text-[#27272A] shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4 h-4 text-[#8C702B] shrink-0 mt-0.5" />
                         <span>{pt}</span>
                       </li>
                     ))}
@@ -230,9 +230,9 @@ export default function FacilitiesPage() {
 
       {/* Special Highlight Banner: Home Tuition Facility */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14">
-        <div className="rounded-3xl bg-[#F4F4F5] border-2 border-[#27272A]/25 p-8 sm:p-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div className="rounded-3xl bg-[#F9F5EB] border-2 border-[#8C702B]/25 p-8 sm:p-10 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-2xl">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#27272A] text-white text-xs font-bold uppercase">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8C702B] text-white text-xs font-bold uppercase">
               Special Facility
             </span>
             <h3 className="font-serif-display text-2xl sm:text-3xl font-bold text-[#09090B]">
@@ -246,7 +246,7 @@ export default function FacilitiesPage() {
             <button
               type="button"
               onClick={() => openEnquiryModal('Home Tuition Facility', 'Home Tuition')}
-              className="px-6 py-3.5 rounded-xl bg-[#E4E4E7] hover:bg-[#E4E4E7] text-[#09090B] font-extrabold text-sm flex items-center gap-2 shadow-sm cursor-pointer"
+              className="px-6 py-3.5 rounded-xl bg-[#D6B66B] hover:bg-[#D6B66B] text-[#09090B] font-extrabold text-sm flex items-center gap-2 shadow-sm cursor-pointer"
             >
               Book Home Tuition Enquiry
               <ArrowRight className="w-4 h-4" />
@@ -255,7 +255,7 @@ export default function FacilitiesPage() {
               href={`tel:+91${settings.phone_primary}`}
               className="px-5 py-3.5 rounded-xl bg-[#09090B] text-white font-mono-num font-bold text-sm flex items-center gap-2"
             >
-              <Phone className="w-4 h-4 text-[#E4E4E7]" />
+              <Phone className="w-4 h-4 text-[#D6B66B]" />
               +91 {settings.phone_primary}
             </a>
           </div>

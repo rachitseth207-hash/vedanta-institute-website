@@ -27,25 +27,25 @@ const quickHighlights = [
     title: 'Expert Faculty',
     subtitle: 'Qualified B.Ed., M.Ed., B.Sc., M.Sc., M.A., M.Phil. & Ph.D. Educators',
     icon: GraduationCap,
-    accent: 'bg-zinc-100 text-[#27272A] border-zinc-300'
+    accent: 'bg-[#F9F5EB] text-[#8C702B] border-[#D6B66B]/45'
   },
   {
     title: 'Regular Tests',
     subtitle: 'Weekly OMR & Board-Pattern Assessments with Detailed Evaluation',
     icon: FileCheck2,
-    accent: 'bg-zinc-100 text-zinc-800 border-zinc-300'
+    accent: 'bg-[#F9F5EB] text-zinc-800 border-[#D6B66B]/45'
   },
   {
     title: 'Personal Attention',
     subtitle: 'Focused Batch Sizes, Individual Mentoring & Doubt-Clearing Desks',
     icon: Users,
-    accent: 'bg-zinc-100 text-zinc-800 border-zinc-300'
+    accent: 'bg-[#F9F5EB] text-zinc-800 border-[#D6B66B]/45'
   },
   {
     title: 'Updated Study Material',
     subtitle: 'Comprehensive Notes Aligned with JKBOSE, CBSE, UPSC, JKSSB & SSC',
     icon: BookOpen,
-    accent: 'bg-zinc-100 text-zinc-800 border-zinc-300'
+    accent: 'bg-[#F9F5EB] text-zinc-800 border-[#D6B66B]/45'
   }
 ];
 
@@ -135,13 +135,13 @@ export default function HomePage() {
   return (
     <div>
       {/* ================= HERO SECTION ================= */}
-      <section className="relative hero-mesh text-white overflow-hidden pt-10 pb-24 lg:pt-16 lg:pb-28 border-b-4 border-[#E4E4E7]">
+      <section className="relative hero-mesh text-white overflow-hidden pt-10 pb-24 lg:pt-16 lg:pb-28 border-b-4 border-[#D6B66B]">
         {/* Subtle Academic Grid Pattern */}
         <div
           className="absolute inset-0 opacity-10 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(#FFFFFF 1px, transparent 1px), radial-gradient(#E4E4E7 1px, #09090B 1px)',
+              'radial-gradient(#FFFFFF 1px, transparent 1px), radial-gradient(#D6B66B 1px, #09090B 1px)',
             backgroundSize: '36px 36px',
             backgroundPosition: '0 0, 18px 18px'
           }}
@@ -153,7 +153,7 @@ export default function HomePage() {
             <div className="lg:col-span-7 space-y-6">
               {/* Top Badges */}
               <div className="inline-flex flex-wrap items-center gap-2.5">
-                <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase tracking-wider shadow-md">
+                <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#D6B66B] text-[#09090B] text-xs font-extrabold uppercase tracking-wider shadow-md">
                   <span className="w-2 h-2 rounded-full bg-[#09090B] animate-ping" />
                   Admissions Open
                 </span>
@@ -166,7 +166,7 @@ export default function HomePage() {
               {/* Required Hero Heading */}
               <h1 className="font-serif-display text-4xl sm:text-5xl lg:text-[54px] font-extrabold tracking-tight leading-[1.12] text-white">
                 Build Your Future With{' '}
-                <span className="text-[#E4E4E7] underline decoration-[#E4E4E7]/40 underline-offset-8">
+                <span className="text-[#D6B66B] underline decoration-[#D6B66B]/40 underline-offset-8">
                   The Right Guidance
                 </span>
               </h1>
@@ -208,7 +208,7 @@ export default function HomePage() {
               <div className="pt-2 flex flex-wrap items-center gap-4">
                 <Link
                   to="/courses"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-[#E4E4E7] hover:bg-zinc-300 text-[#09090B] font-extrabold text-sm sm:text-base shadow-lg hover:shadow-xl transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-[#D6B66B] hover:bg-[#C4A255] text-[#09090B] font-extrabold text-sm sm:text-base shadow-lg hover:shadow-xl transition-all"
                 >
                   Explore Courses
                   <ArrowRight className="w-5 h-5" />
@@ -216,7 +216,7 @@ export default function HomePage() {
                 <button
                   type="button"
                   onClick={() => openEnquiryModal('', 'Admission')}
-                  className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-white text-[#09090B] hover:bg-zinc-100 font-extrabold text-sm sm:text-base shadow-lg transition-all cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-white text-[#09090B] hover:bg-[#F9F5EB] font-extrabold text-sm sm:text-base shadow-lg transition-all cursor-pointer"
                 >
                   Enquire Now
                 </button>
@@ -225,16 +225,16 @@ export default function HomePage() {
               {/* Verified Location & Direct Contact Strip */}
               <div className="pt-4 border-t border-white/15 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs sm:text-sm text-zinc-300">
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#E4E4E7] shrink-0" />
+                  <MapPin className="w-4 h-4 text-[#D6B66B] shrink-0" />
                   <span>{settings.address}</span>
                 </div>
                 <div className="flex items-center gap-2 font-mono-num">
-                  <Phone className="w-4 h-4 text-[#E4E4E7] shrink-0" />
-                  <a href={`tel:+91${settings.phone_primary}`} className="hover:text-[#E4E4E7] font-bold text-white">
+                  <Phone className="w-4 h-4 text-[#D6B66B] shrink-0" />
+                  <a href={`tel:+91${settings.phone_primary}`} className="hover:text-[#D6B66B] font-bold text-white">
                     +91 {settings.phone_primary}
                   </a>
                   <span>/</span>
-                  <a href={`tel:+91${settings.phone_secondary}`} className="hover:text-[#E4E4E7] font-bold text-white">
+                  <a href={`tel:+91${settings.phone_secondary}`} className="hover:text-[#D6B66B] font-bold text-white">
                     {settings.phone_secondary}
                   </a>
                 </div>
@@ -252,7 +252,7 @@ export default function HomePage() {
                     className="w-full h-full object-cover opacity-85"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#09090B] via-[#09090B]/45 to-transparent flex flex-col justify-end p-4 text-white">
-                    <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-[#E4E4E7] text-[#09090B] text-[10px] font-extrabold uppercase w-fit mb-1">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-[#D6B66B] text-[#09090B] text-[10px] font-extrabold uppercase w-fit mb-1">
                       Qualified Faculty Pool
                     </span>
                     <p className="font-serif-display text-base sm:text-lg font-bold leading-snug">
@@ -268,15 +268,15 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 gap-2.5">
                   <Link
                     to="/courses?category=School+Education"
-                    className="p-3.5 rounded-xl bg-[#F4F4F5] hover:bg-zinc-100 border border-zinc-200 transition-colors group"
+                    className="p-3.5 rounded-xl bg-[#F9F5EB] hover:bg-[#F9F5EB] border border-[#D6B66B]/30 transition-colors group"
                   >
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#27272A]">
+                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#8C702B]">
                         School Wing
                       </span>
-                      <BookOpen className="w-4 h-4 text-[#27272A]" />
+                      <BookOpen className="w-4 h-4 text-[#8C702B]" />
                     </div>
-                    <p className="text-sm font-extrabold text-[#09090B] mt-1 group-hover:text-[#27272A]">
+                    <p className="text-sm font-extrabold text-[#09090B] mt-1 group-hover:text-[#8C702B]">
                       Classes 5th to 12th
                     </p>
                     <p className="text-[11px] text-zinc-600 font-medium">
@@ -286,15 +286,15 @@ export default function HomePage() {
 
                   <Link
                     to="/courses?category=Graduation+Courses"
-                    className="p-3.5 rounded-xl bg-[#F4F4F5] hover:bg-zinc-100 border border-zinc-200 transition-colors group"
+                    className="p-3.5 rounded-xl bg-[#F9F5EB] hover:bg-[#F9F5EB] border border-[#D6B66B]/30 transition-colors group"
                   >
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#27272A]">
+                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#8C702B]">
                         Degree Wing
                       </span>
-                      <GraduationCap className="w-4 h-4 text-[#27272A]" />
+                      <GraduationCap className="w-4 h-4 text-[#8C702B]" />
                     </div>
-                    <p className="text-sm font-extrabold text-[#09090B] mt-1 group-hover:text-[#27272A]">
+                    <p className="text-sm font-extrabold text-[#09090B] mt-1 group-hover:text-[#8C702B]">
                       B.A. &amp; B.Sc. Maths
                     </p>
                     <p className="text-[11px] text-zinc-600 font-medium">
@@ -304,7 +304,7 @@ export default function HomePage() {
 
                   <Link
                     to="/courses?category=Competitive+Examinations"
-                    className="p-3.5 rounded-xl bg-[#F4F4F5] hover:bg-zinc-100 border border-zinc-200 transition-colors group"
+                    className="p-3.5 rounded-xl bg-[#F9F5EB] hover:bg-[#F9F5EB] border border-[#D6B66B]/30 transition-colors group"
                   >
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] font-extrabold uppercase tracking-wider text-zinc-800">
@@ -312,7 +312,7 @@ export default function HomePage() {
                       </span>
                       <Award className="w-4 h-4 text-zinc-700" />
                     </div>
-                    <p className="text-sm font-extrabold text-[#09090B] mt-1 group-hover:text-[#27272A]">
+                    <p className="text-sm font-extrabold text-[#09090B] mt-1 group-hover:text-[#8C702B]">
                       JEE • NEET • NDA • CDS
                     </p>
                     <p className="text-[11px] text-zinc-600 font-medium">
@@ -322,7 +322,7 @@ export default function HomePage() {
 
                   <Link
                     to="/courses?category=Job-Oriented+Courses"
-                    className="p-3.5 rounded-xl bg-[#F4F4F5] hover:bg-zinc-100 border border-zinc-200 transition-colors group"
+                    className="p-3.5 rounded-xl bg-[#F9F5EB] hover:bg-[#F9F5EB] border border-[#D6B66B]/30 transition-colors group"
                   >
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] font-extrabold uppercase tracking-wider text-zinc-800">
@@ -330,7 +330,7 @@ export default function HomePage() {
                       </span>
                       <Briefcase className="w-4 h-4 text-zinc-700" />
                     </div>
-                    <p className="text-sm font-extrabold text-[#09090B] mt-1 group-hover:text-[#27272A]">
+                    <p className="text-sm font-extrabold text-[#09090B] mt-1 group-hover:text-[#8C702B]">
                       JKSSB &amp; SSC Exams
                     </p>
                     <p className="text-[11px] text-zinc-600 font-medium">
@@ -342,7 +342,7 @@ export default function HomePage() {
                 {/* Instant Admission Desk Footer inside Hero Card */}
                 <div className="p-3.5 rounded-2xl bg-[#09090B] text-white flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-9 h-9 rounded-xl bg-[#E4E4E7] text-[#09090B] flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-xl bg-[#D6B66B] text-[#09090B] flex items-center justify-center shrink-0">
                       <Bell className="w-4 h-4" />
                     </div>
                     <div>
@@ -357,7 +357,7 @@ export default function HomePage() {
                   <button
                     type="button"
                     onClick={() => openEnquiryModal('', 'Admission')}
-                    className="px-3.5 py-2 rounded-xl bg-[#E4E4E7] hover:bg-zinc-300 text-[#09090B] text-xs font-extrabold shrink-0 cursor-pointer"
+                    className="px-3.5 py-2 rounded-xl bg-[#D6B66B] hover:bg-[#C4A255] text-[#09090B] text-xs font-extrabold shrink-0 cursor-pointer"
                   >
                     Apply Now
                   </button>
@@ -376,7 +376,7 @@ export default function HomePage() {
             return (
               <div
                 key={idx}
-                className="card-elevated rounded-2xl p-5 bg-white border-b-4 border-b-[#27272A] flex items-start gap-4"
+                className="card-elevated rounded-2xl p-5 bg-white border-b-4 border-b-[#8C702B] flex items-start gap-4"
               >
                 <div
                   className={`w-12 h-12 rounded-xl border flex items-center justify-center shrink-0 ${item.accent}`}
@@ -401,7 +401,7 @@ export default function HomePage() {
       <section className="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-5">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-200 text-[#27272A] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F3EBD8] text-[#8C702B] text-xs font-bold uppercase tracking-wider">
               Welcome to Vedanta Institute
             </div>
             <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-[#09090B] leading-tight">
@@ -410,7 +410,7 @@ export default function HomePage() {
             <p className="text-zinc-700 text-base leading-relaxed">
               Situated near <strong>Shiv Mandir Garhi, Udhampur (Jammu &amp; Kashmir)</strong>,{' '}
               <strong>Vedanta Institute</strong> is dedicated to its guiding motto:{' '}
-              <em className="text-[#27272A] font-semibold">“We Guide You to Achieve – Chase Excellence.”</em> We bridge the gap between school classroom learning and high-stakes competitive examinations.
+              <em className="text-[#8C702B] font-semibold">“We Guide You to Achieve – Chase Excellence.”</em> We bridge the gap between school classroom learning and high-stakes competitive examinations.
             </p>
             <p className="text-zinc-600 text-sm sm:text-base leading-relaxed">
               Whether a student is building early academic habits in Class 5th, appearing for critical Class 10th &amp; 12th Board Examinations (JKBOSE / CBSE), pursuing B.A. or B.Sc. Mathematics, or preparing for national and state competitive exams like JEE, NEET, NDA, CDS, JKSSB, and SSC — our qualified educators provide structured guidance every step of the way.
@@ -424,7 +424,7 @@ export default function HomePage() {
                 'Home Tuition Facility Available'
               ].map((point, i) => (
                 <div key={i} className="flex items-center gap-2.5 text-sm font-semibold text-[#09090B]">
-                  <CheckCircle2 className="w-4 h-4 text-[#27272A] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#8C702B] shrink-0" />
                   <span>{point}</span>
                 </div>
               ))}
@@ -433,14 +433,14 @@ export default function HomePage() {
             <div className="pt-3 flex flex-wrap items-center gap-3">
               <Link
                 to="/about"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#09090B] hover:bg-[#27272A] text-white text-sm font-bold transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#09090B] hover:bg-[#8C702B] text-white text-sm font-bold transition-colors"
               >
                 About Our Institute
-                <ArrowRight className="w-4 h-4 text-[#E4E4E7]" />
+                <ArrowRight className="w-4 h-4 text-[#D6B66B]" />
               </Link>
               <Link
                 to="/facilities"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-zinc-300 hover:border-[#27272A] text-[#09090B] text-sm font-bold transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-[#D6B66B]/45 hover:border-[#8C702B] text-[#09090B] text-sm font-bold transition-colors"
               >
                 Explore All 10 Facilities
               </Link>
@@ -449,9 +449,9 @@ export default function HomePage() {
 
           {/* Right Side: Institutional Credential Card */}
           <div className="lg:col-span-6">
-            <div className="rounded-3xl bg-white p-6 sm:p-8 border border-zinc-200 shadow-lg space-y-6">
-              <div className="bg-[#09090B] text-white rounded-2xl p-6 border-l-4 border-[#E4E4E7]">
-                <p className="text-xs font-bold uppercase tracking-widest text-[#E4E4E7]">
+            <div className="rounded-3xl bg-white p-6 sm:p-8 border border-[#D6B66B]/30 shadow-lg space-y-6">
+              <div className="bg-[#09090B] text-white rounded-2xl p-6 border-l-4 border-[#D6B66B]">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#D6B66B]">
                   Our Guiding Motto
                 </p>
                 <blockquote className="font-serif-display text-xl sm:text-2xl font-bold mt-1">
@@ -463,8 +463,8 @@ export default function HomePage() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-[#FAFAFA] rounded-2xl p-5 border border-zinc-200">
-                  <span className="text-xs font-bold uppercase text-[#27272A]">
+                <div className="bg-[#FAF8F3] rounded-2xl p-5 border border-[#D6B66B]/30">
+                  <span className="text-xs font-bold uppercase text-[#8C702B]">
                     Faculty Qualifications
                   </span>
                   <p className="font-serif-display text-lg font-bold text-[#09090B] mt-1">
@@ -475,8 +475,8 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="bg-[#FAFAFA] rounded-2xl p-5 border border-zinc-200">
-                  <span className="text-xs font-bold uppercase text-[#27272A]">
+                <div className="bg-[#FAF8F3] rounded-2xl p-5 border border-[#D6B66B]/30">
+                  <span className="text-xs font-bold uppercase text-[#8C702B]">
                     Boards &amp; Streams
                   </span>
                   <p className="font-serif-display text-lg font-bold text-[#09090B] mt-1">
@@ -488,9 +488,9 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="bg-zinc-100 rounded-2xl p-5 border border-zinc-300 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="bg-[#F9F5EB] rounded-2xl p-5 border border-[#D6B66B]/45 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
-                  <span className="text-xs font-bold text-[#27272A] uppercase">
+                  <span className="text-xs font-bold text-[#8C702B] uppercase">
                     Direct Counselling Desk
                   </span>
                   <p className="text-sm font-bold text-[#09090B] mt-0.5">
@@ -500,7 +500,7 @@ export default function HomePage() {
                 </div>
                 <a
                   href={`tel:+91${settings.phone_primary}`}
-                  className="px-4 py-2.5 rounded-xl bg-[#09090B] text-white font-mono-num font-bold text-xs shrink-0 hover:bg-[#27272A] transition-colors"
+                  className="px-4 py-2.5 rounded-xl bg-[#09090B] text-white font-mono-num font-bold text-xs shrink-0 hover:bg-[#8C702B] transition-colors"
                 >
                   Call +91 {settings.phone_primary}
                 </a>
@@ -511,11 +511,11 @@ export default function HomePage() {
       </section>
 
       {/* ================= POPULAR COURSES SECTION ================= */}
-      <section className="py-16 lg:py-20 bg-[#F4F4F5]/60 border-y border-zinc-200">
+      <section className="py-16 lg:py-20 bg-[#F9F5EB]/60 border-y border-[#D6B66B]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
             <div>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-200 text-[#27272A] text-xs font-bold uppercase tracking-wider">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F3EBD8] text-[#8C702B] text-xs font-bold uppercase tracking-wider">
                 Academic &amp; Competitive Programs
               </span>
               <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-[#09090B] mt-2">
@@ -524,7 +524,7 @@ export default function HomePage() {
             </div>
             <Link
               to="/courses"
-              className="inline-flex items-center gap-2 text-sm font-bold text-[#27272A] hover:text-[#09090B]"
+              className="inline-flex items-center gap-2 text-sm font-bold text-[#8C702B] hover:text-[#09090B]"
             >
               View All {courses.length} Courses
               <ArrowRight className="w-4 h-4" />
@@ -541,7 +541,7 @@ export default function HomePage() {
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                   selectedCategory === cat
                     ? 'bg-[#09090B] text-white shadow-sm'
-                    : 'bg-white text-zinc-700 hover:bg-zinc-100 border border-zinc-200'
+                    : 'bg-white text-zinc-700 hover:bg-[#F9F5EB] border border-[#D6B66B]/30'
                 }`}
               >
                 {cat}
@@ -558,10 +558,10 @@ export default function HomePage() {
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="px-2.5 py-1 rounded-md bg-zinc-100 text-[#27272A] text-[11px] font-bold">
+                    <span className="px-2.5 py-1 rounded-md bg-[#F9F5EB] text-[#8C702B] text-[11px] font-bold">
                       {course.category}
                     </span>
-                    <span className="px-2.5 py-1 rounded-md bg-[#09090B] text-[#E4E4E7] text-[11px] font-semibold">
+                    <span className="px-2.5 py-1 rounded-md bg-[#09090B] text-[#D6B66B] text-[11px] font-semibold">
                       {course.board}
                     </span>
                   </div>
@@ -569,7 +569,7 @@ export default function HomePage() {
                   <h3 className="font-serif-display text-xl font-bold text-[#09090B]">
                     {course.title}
                   </h3>
-                  <p className="text-xs font-semibold text-[#27272A] mt-1">
+                  <p className="text-xs font-semibold text-[#8C702B] mt-1">
                     Eligibility: {course.eligibility}
                   </p>
                   <p className="text-sm text-zinc-600 mt-2.5 leading-relaxed">
@@ -579,7 +579,7 @@ export default function HomePage() {
                   <ul className="mt-4 space-y-1.5 border-t border-zinc-100 pt-3">
                     {(course.highlights || []).slice(0, 4).map((h, i) => (
                       <li key={i} className="flex items-center gap-2 text-xs text-zinc-700 font-medium">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#27272A] shrink-0" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#8C702B] shrink-0" />
                         <span>{h}</span>
                       </li>
                     ))}
@@ -589,14 +589,14 @@ export default function HomePage() {
                 <div className="mt-6 pt-4 border-t border-zinc-100 flex items-center justify-between gap-3">
                   <Link
                     to="/fees"
-                    className="text-xs font-bold text-zinc-600 hover:text-[#27272A] transition-colors"
+                    className="text-xs font-bold text-zinc-600 hover:text-[#8C702B] transition-colors"
                   >
                     Fee Structure →
                   </Link>
                   <button
                     type="button"
                     onClick={() => openEnquiryModal(course.title, 'Admission')}
-                    className="px-4 py-2 rounded-xl bg-[#E4E4E7] hover:bg-zinc-300 text-[#09090B] font-bold text-xs transition-colors cursor-pointer"
+                    className="px-4 py-2 rounded-xl bg-[#D6B66B] hover:bg-[#C4A255] text-[#09090B] font-bold text-xs transition-colors cursor-pointer"
                   >
                     Enquire Now
                   </button>
@@ -610,7 +610,7 @@ export default function HomePage() {
       {/* ================= WHY CHOOSE VEDANTA INSTITUTE ================= */}
       <section className="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-200 text-[#27272A] text-xs font-bold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F3EBD8] text-[#8C702B] text-xs font-bold uppercase tracking-wider">
             The Vedanta Advantage
           </span>
           <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-[#09090B] mt-2">
@@ -626,7 +626,7 @@ export default function HomePage() {
             const Icon = item.icon;
             return (
               <div key={idx} className="card-elevated rounded-2xl p-6 bg-white">
-                <div className="w-12 h-12 rounded-xl bg-zinc-100 text-[#27272A] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-xl bg-[#F9F5EB] text-[#8C702B] flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="font-serif-display text-xl font-bold text-[#09090B]">
@@ -646,7 +646,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5 space-y-4">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D6B66B] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
                 Student Success &amp; Achievement Framework
               </span>
               <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-white leading-tight">
@@ -658,7 +658,7 @@ export default function HomePage() {
               <div className="pt-2">
                 <Link
                   to="/admissions"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#E4E4E7] text-[#09090B] font-extrabold text-sm hover:bg-zinc-300 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#D6B66B] text-[#09090B] font-extrabold text-sm hover:bg-[#C4A255] transition-colors"
                 >
                   Enrol in a Batch
                   <ArrowRight className="w-4 h-4" />
@@ -691,9 +691,9 @@ export default function HomePage() {
               ].map((st, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-white/10 border border-white/15 hover:border-[#E4E4E7] transition-colors backdrop-blur-xs"
+                  className="p-6 rounded-2xl bg-white/10 border border-white/15 hover:border-[#D6B66B] transition-colors backdrop-blur-xs"
                 >
-                  <span className="font-mono-num text-2xl font-extrabold text-[#E4E4E7]">
+                  <span className="font-mono-num text-2xl font-extrabold text-[#D6B66B]">
                     {st.step}
                   </span>
                   <h3 className="font-serif-display text-lg font-bold text-white mt-2">
@@ -714,7 +714,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-200 text-[#27272A] text-xs font-bold uppercase tracking-wider">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F3EBD8] text-[#8C702B] text-xs font-bold uppercase tracking-wider">
                 Student &amp; Parent Voices
               </span>
               <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-[#09090B] mt-2">
@@ -723,7 +723,7 @@ export default function HomePage() {
             </div>
             <Link
               to="/admin"
-              className="text-xs font-semibold text-[#27272A] hover:underline"
+              className="text-xs font-semibold text-[#8C702B] hover:underline"
             >
               Manage Testimonials in Admin →
             </Link>
@@ -733,16 +733,16 @@ export default function HomePage() {
             {testimonials.map(item => (
               <div
                 key={item.id}
-                className="card-elevated rounded-2xl p-6 bg-[#FAFAFA] flex flex-col justify-between"
+                className="card-elevated rounded-2xl p-6 bg-[#FAF8F3] flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
-                    <div className="flex items-center gap-1 text-[#E4E4E7]">
+                    <div className="flex items-center gap-1 text-[#D6B66B]">
                       {Array.from({ length: item.rating || 5 }).map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#E4E4E7]" />
+                        <Star key={i} className="w-4 h-4 fill-[#D6B66B]" />
                       ))}
                     </div>
-                    <span className="px-2.5 py-0.5 rounded-full bg-zinc-200 text-[#27272A] text-[11px] font-bold">
+                    <span className="px-2.5 py-0.5 rounded-full bg-[#F3EBD8] text-[#8C702B] text-[11px] font-bold">
                       {item.course_tag}
                     </span>
                   </div>
@@ -750,7 +750,7 @@ export default function HomePage() {
                     “{item.content}”
                   </p>
                 </div>
-                <div className="mt-5 pt-4 border-t border-zinc-200">
+                <div className="mt-5 pt-4 border-t border-[#D6B66B]/30">
                   <p className="font-bold text-sm text-[#09090B]">{item.author_name}</p>
                   <p className="text-xs text-zinc-500">{item.author_role}</p>
                 </div>
@@ -761,10 +761,10 @@ export default function HomePage() {
       </section>
 
       {/* ================= EXPANDABLE FAQ SECTION ================= */}
-      <section className="py-16 bg-[#F4F4F5] border-t border-zinc-200">
+      <section className="py-16 bg-[#F9F5EB] border-t border-[#D6B66B]/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-200 text-[#27272A] text-xs font-bold uppercase tracking-wider">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F3EBD8] text-[#8C702B] text-xs font-bold uppercase tracking-wider">
               Frequently Asked Questions
             </span>
             <h2 className="font-serif-display text-3xl font-bold text-[#09090B] mt-2">
@@ -778,16 +778,16 @@ export default function HomePage() {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl bg-white border border-zinc-200 overflow-hidden shadow-xs"
+                  className="rounded-2xl bg-white border border-[#D6B66B]/30 overflow-hidden shadow-xs"
                 >
                   <button
                     type="button"
                     onClick={() => setOpenFaqIndex(isOpen ? -1 : index)}
-                    className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#09090B] hover:text-[#27272A] transition-colors cursor-pointer"
+                    className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#09090B] hover:text-[#8C702B] transition-colors cursor-pointer"
                   >
                     <span>{faq.q}</span>
                     <ChevronDown
-                      className={`w-5 h-5 text-[#27272A] shrink-0 transition-transform duration-200 ${
+                      className={`w-5 h-5 text-[#8C702B] shrink-0 transition-transform duration-200 ${
                         isOpen ? 'rotate-180' : ''
                       }`}
                     />
@@ -806,9 +806,9 @@ export default function HomePage() {
 
       {/* ================= CALL TO ACTION SECTION FOR ADMISSIONS ================= */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl hero-mesh text-white p-8 sm:p-12 shadow-2xl border-2 border-[#E4E4E7]/50 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div className="rounded-3xl hero-mesh text-white p-8 sm:p-12 shadow-2xl border-2 border-[#D6B66B]/50 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-2xl text-center lg:text-left">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D6B66B] text-[#09090B] text-xs font-extrabold uppercase">
               Admissions Open
             </span>
             <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-white">
@@ -822,7 +822,7 @@ export default function HomePage() {
             <button
               type="button"
               onClick={() => openEnquiryModal('', 'Admission')}
-              className="px-7 py-4 rounded-xl bg-[#E4E4E7] hover:bg-zinc-300 text-[#09090B] font-extrabold text-sm shadow-lg cursor-pointer"
+              className="px-7 py-4 rounded-xl bg-[#D6B66B] hover:bg-[#C4A255] text-[#09090B] font-extrabold text-sm shadow-lg cursor-pointer"
             >
               Enquire Now
             </button>
@@ -830,7 +830,7 @@ export default function HomePage() {
               href={`tel:+91${settings.phone_primary}`}
               className="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/30 font-mono-num font-bold text-sm flex items-center gap-2"
             >
-              <Phone className="w-4 h-4 text-[#E4E4E7]" />
+              <Phone className="w-4 h-4 text-[#D6B66B]" />
               +91 {settings.phone_primary}
             </a>
           </div>

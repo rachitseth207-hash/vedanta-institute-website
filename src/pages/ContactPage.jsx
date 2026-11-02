@@ -72,13 +72,13 @@ export default function ContactPage() {
   return (
     <div className="pb-20">
       {/* Header Banner */}
-      <section className="hero-mesh text-white py-16 border-b-4 border-[#E4E4E7]">
+      <section className="hero-mesh text-white py-16 border-b-4 border-[#D6B66B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#D6B66B] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
             Get in Touch With Us
           </span>
           <h1 className="font-serif-display text-4xl sm:text-5xl font-extrabold mt-4">
-            Contact <span className="text-[#E4E4E7]">Vedanta Institute</span>
+            Contact <span className="text-[#D6B66B]">Vedanta Institute</span>
           </h1>
           <p className="text-white/85 text-base sm:text-lg max-w-3xl mt-3 leading-relaxed">
             Visit our campus at <strong>{settings.address}</strong> or connect directly with{' '}
@@ -92,10 +92,10 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1: Verified Address */}
           <div className="card-elevated rounded-2xl p-6 bg-white border-t-4 border-t-[#09090B]">
-            <div className="w-12 h-12 rounded-xl bg-[#09090B] text-[#E4E4E7] flex items-center justify-center mb-4">
+            <div className="w-12 h-12 rounded-xl bg-[#09090B] text-[#D6B66B] flex items-center justify-center mb-4">
               <MapPin className="w-6 h-6" />
             </div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#27272A]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#8C702B]">
               Institute Campus Address
             </span>
             <h2 className="font-serif-display text-xl font-bold text-[#09090B] mt-1">
@@ -108,7 +108,7 @@ export default function ContactPage() {
               href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-[#27272A] hover:underline"
+              className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-[#8C702B] hover:underline"
             >
               Open in Google Maps
               <ExternalLink className="w-3.5 h-3.5" />
@@ -116,11 +116,11 @@ export default function ContactPage() {
           </div>
 
           {/* Card 2: Contact Person & Click-to-Call Phone Numbers */}
-          <div className="card-elevated rounded-2xl p-6 bg-white border-t-4 border-t-[#27272A]">
-            <div className="w-12 h-12 rounded-xl bg-[#27272A] text-white flex items-center justify-center mb-4">
+          <div className="card-elevated rounded-2xl p-6 bg-white border-t-4 border-t-[#8C702B]">
+            <div className="w-12 h-12 rounded-xl bg-[#8C702B] text-white flex items-center justify-center mb-4">
               <Phone className="w-6 h-6" />
             </div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#27272A]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#8C702B]">
               Contact Person: {settings.contact_person}
             </span>
             <h2 className="font-serif-display text-xl font-bold text-[#09090B] mt-1">
@@ -129,20 +129,20 @@ export default function ContactPage() {
             <div className="mt-3 space-y-2">
               <a
                 href={`tel:+91${settings.phone_primary}`}
-                className="w-full py-2.5 px-4 rounded-xl bg-[#F4F4F5] hover:bg-[#09090B] hover:text-white text-[#09090B] font-mono-num font-bold text-sm flex items-center justify-between transition-colors"
+                className="w-full py-2.5 px-4 rounded-xl bg-[#F9F5EB] hover:bg-[#09090B] hover:text-white text-[#09090B] font-mono-num font-bold text-sm flex items-center justify-between transition-colors"
               >
                 <span>+91 {settings.phone_primary}</span>
-                <span className="text-xs font-sans bg-[#E4E4E7] text-[#09090B] px-2 py-0.5 rounded font-bold">
+                <span className="text-xs font-sans bg-[#D6B66B] text-[#09090B] px-2 py-0.5 rounded font-bold">
                   Tap to Call
                 </span>
               </a>
               {settings.phone_secondary && (
                 <a
                   href={`tel:+91${settings.phone_secondary}`}
-                  className="w-full py-2.5 px-4 rounded-xl bg-[#F4F4F5] hover:bg-[#09090B] hover:text-white text-[#09090B] font-mono-num font-bold text-sm flex items-center justify-between transition-colors"
+                  className="w-full py-2.5 px-4 rounded-xl bg-[#F9F5EB] hover:bg-[#09090B] hover:text-white text-[#09090B] font-mono-num font-bold text-sm flex items-center justify-between transition-colors"
                 >
                   <span>+91 {settings.phone_secondary}</span>
-                  <span className="text-xs font-sans bg-[#E4E4E7] text-[#09090B] px-2 py-0.5 rounded font-bold">
+                  <span className="text-xs font-sans bg-[#D6B66B] text-[#09090B] px-2 py-0.5 rounded font-bold">
                     Tap to Call
                   </span>
                 </a>
@@ -186,7 +186,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Contact Enquiry Form */}
           <div className="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 shadow-lg border border-[#09090B]/10">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#27272A]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#8C702B]">
               Send Us a Message
             </span>
             <h2 className="font-serif-display text-2xl sm:text-3xl font-bold text-[#09090B] mt-1">
@@ -197,7 +197,7 @@ export default function ContactPage() {
             </p>
 
             {submitted ? (
-              <div className="p-6 rounded-2xl bg-zinc-100 border border-zinc-300 text-center space-y-3">
+              <div className="p-6 rounded-2xl bg-[#F9F5EB] border border-[#D6B66B]/45 text-center space-y-3">
                 <CheckCircle2 className="w-10 h-10 text-zinc-700 mx-auto" />
                 <h3 className="font-serif-display text-xl font-bold text-[#09090B]">
                   Message Sent Successfully!
@@ -241,7 +241,7 @@ export default function ContactPage() {
                     value={form.student_name}
                     onChange={e => setForm({ ...form, student_name: e.target.value })}
                     placeholder="Enter student or parent name"
-                    className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm focus:bg-white focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-4 py-3 rounded-xl bg-[#F9F5EB] border border-[#09090B]/15 text-sm focus:bg-white focus:outline-none focus:border-[#8C702B]"
                   />
                 </div>
 
@@ -255,7 +255,7 @@ export default function ContactPage() {
                     value={form.mobile}
                     onChange={e => setForm({ ...form, mobile: e.target.value })}
                     placeholder="10-digit mobile number"
-                    className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm font-mono-num focus:bg-white focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-4 py-3 rounded-xl bg-[#F9F5EB] border border-[#09090B]/15 text-sm font-mono-num focus:bg-white focus:outline-none focus:border-[#8C702B]"
                   />
                 </div>
 
@@ -266,7 +266,7 @@ export default function ContactPage() {
                   <select
                     value={form.course_interested}
                     onChange={e => setForm({ ...form, course_interested: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm font-semibold text-[#09090B] focus:bg-white focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-4 py-3 rounded-xl bg-[#F9F5EB] border border-[#09090B]/15 text-sm font-semibold text-[#09090B] focus:bg-white focus:outline-none focus:border-[#8C702B]"
                   >
                     <option value="General Contact Enquiry">General Contact Enquiry</option>
                     <option value="Fee Structure Enquiry">Fee Structure Enquiry</option>
@@ -289,14 +289,14 @@ export default function ContactPage() {
                     value={form.message}
                     onChange={e => setForm({ ...form, message: e.target.value })}
                     placeholder="How can Vedanta Institute help you?"
-                    className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm focus:bg-white focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-4 py-3 rounded-xl bg-[#F9F5EB] border border-[#09090B]/15 text-sm focus:bg-white focus:outline-none focus:border-[#8C702B]"
                   />
                 </div>
 
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full py-3.5 rounded-xl bg-[#E4E4E7] hover:bg-[#E4E4E7] text-[#09090B] font-extrabold text-sm flex items-center justify-center gap-2 shadow-md cursor-pointer"
+                  className="w-full py-3.5 rounded-xl bg-[#D6B66B] hover:bg-[#D6B66B] text-[#09090B] font-extrabold text-sm flex items-center justify-center gap-2 shadow-md cursor-pointer"
                 >
                   <Send className="w-4 h-4" />
                   {submitting ? 'Sending Message...' : 'Send Message'}
@@ -308,7 +308,7 @@ export default function ContactPage() {
           {/* Google Maps Location Section using Verified Institute Address */}
           <div className="lg:col-span-6 flex flex-col justify-between bg-white rounded-3xl p-6 sm:p-8 shadow-lg border border-[#09090B]/10 space-y-4">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#27272A]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#8C702B]">
                 Campus Location Map
               </span>
               <h2 className="font-serif-display text-2xl sm:text-3xl font-bold text-[#09090B] mt-1">
@@ -319,7 +319,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="w-full flex-1 min-h-[320px] rounded-2xl overflow-hidden border border-[#09090B]/15 bg-[#F4F4F5]">
+            <div className="w-full flex-1 min-h-[320px] rounded-2xl overflow-hidden border border-[#09090B]/15 bg-[#F9F5EB]">
               <iframe
                 title="Vedanta Institute Location – Near Shiv Mandir Garhi, Udhampur, Jammu & Kashmir"
                 src={`https://maps.google.com/maps?q=${mapQuery}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
@@ -335,7 +335,7 @@ export default function ContactPage() {
                 href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 font-bold text-[#27272A] hover:underline"
+                className="inline-flex items-center gap-1 font-bold text-[#8C702B] hover:underline"
               >
                 Get Directions on Google Maps
                 <ExternalLink className="w-3.5 h-3.5" />

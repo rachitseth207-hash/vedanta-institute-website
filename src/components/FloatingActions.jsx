@@ -28,7 +28,7 @@ export default function FloatingActions() {
           onClick={scrollToTop}
           aria-label="Back to top"
           title="Back to top"
-          className="w-11 h-11 rounded-full bg-[#09090B] text-[#E4E4E7] border border-[#E4E4E7]/40 shadow-lg hover:bg-[#27272A] hover:text-white flex items-center justify-center transition-all cursor-pointer"
+          className="w-11 h-11 rounded-full bg-[#09090B] text-[#D6B66B] border border-[#D6B66B]/40 shadow-lg hover:bg-[#8C702B] hover:text-white flex items-center justify-center transition-all cursor-pointer"
         >
           <ArrowUp className="w-5 h-5" />
         </button>
@@ -39,9 +39,9 @@ export default function FloatingActions() {
         href={`tel:+91${settings.phone_primary}`}
         aria-label={`Call Vedanta Institute at +91 ${settings.phone_primary}`}
         title={`Call +91 ${settings.phone_primary}`}
-        className="w-12 h-12 rounded-full bg-[#27272A] hover:bg-[#09090B] text-white border-2 border-[#FFFFFF] shadow-lg flex items-center justify-center transition-transform hover:scale-105"
+        className="w-12 h-12 rounded-full bg-[#8C702B] hover:bg-[#09090B] text-white border-2 border-[#FFFFFF] shadow-lg flex items-center justify-center transition-transform hover:scale-105"
       >
-        <Phone className="w-5 h-5 text-[#E4E4E7]" />
+        <Phone className="w-5 h-5 text-[#D6B66B]" />
       </a>
 
       {/* WhatsApp Floating Contact Button */}

@@ -32,13 +32,13 @@ export default function AboutPage() {
   return (
     <div>
       {/* Page Header */}
-      <section className="hero-mesh text-white py-16 lg:py-20 border-b-4 border-[#E4E4E7]">
+      <section className="hero-mesh text-white py-16 lg:py-20 border-b-4 border-[#D6B66B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#D6B66B] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
             About Our Institution
           </span>
           <h1 className="font-serif-display text-4xl sm:text-5xl font-extrabold mt-4">
-            We Guide You to Achieve – <span className="text-[#E4E4E7]">Chase Excellence</span>
+            We Guide You to Achieve – <span className="text-[#D6B66B]">Chase Excellence</span>
           </h1>
           <p className="text-white/85 text-base sm:text-lg max-w-3xl mt-4 leading-relaxed">
             Discover the educational vision, teaching philosophy, and unwavering commitment to conceptual clarity that define <strong>Vedanta Institute</strong> in Udhampur, Jammu & Kashmir.
@@ -50,7 +50,7 @@ export default function AboutPage() {
       <section className="py-16 lg:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-5">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#27272A]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#8C702B]">
               Who We Are
             </span>
             <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-[#09090B]">
@@ -63,16 +63,16 @@ export default function AboutPage() {
               We recognize that every student has unique learning needs. Some require patient rebuilding of foundational concepts in Mathematics and Science during middle school, while others seek rigorous problem-solving speed for JEE, NEET, NDA, CDS, JKSSB, or SSC examinations. Our structured programs cater to learners from <strong>Class 5th to Class 12th (JKBOSE & CBSE – All Streams)</strong>, undergraduate students in <strong>B.A. and B.Sc. Mathematics</strong>, and competitive exam aspirants.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-3">
-              <div className="p-4 rounded-2xl bg-[#F4F4F5] border border-[#09090B]/10">
-                <p className="font-serif-display text-2xl font-extrabold text-[#27272A]">5th–12th</p>
+              <div className="p-4 rounded-2xl bg-[#F9F5EB] border border-[#09090B]/10">
+                <p className="font-serif-display text-2xl font-extrabold text-[#8C702B]">5th–12th</p>
                 <p className="text-xs font-semibold text-[#09090B]/75 mt-1">JKBOSE & CBSE Coaching</p>
               </div>
-              <div className="p-4 rounded-2xl bg-[#F4F4F5] border border-[#09090B]/10">
-                <p className="font-serif-display text-2xl font-extrabold text-[#27272A]">B.A. / B.Sc.</p>
+              <div className="p-4 rounded-2xl bg-[#F9F5EB] border border-[#09090B]/10">
+                <p className="font-serif-display text-2xl font-extrabold text-[#8C702B]">B.A. / B.Sc.</p>
                 <p className="text-xs font-semibold text-[#09090B]/75 mt-1">Graduation Coaching</p>
               </div>
-              <div className="p-4 rounded-2xl bg-[#F4F4F5] border border-[#09090B]/10 col-span-2 sm:col-span-1">
-                <p className="font-serif-display text-2xl font-extrabold text-[#27272A]">Competitive</p>
+              <div className="p-4 rounded-2xl bg-[#F9F5EB] border border-[#09090B]/10 col-span-2 sm:col-span-1">
+                <p className="font-serif-display text-2xl font-extrabold text-[#8C702B]">Competitive</p>
                 <p className="text-xs font-semibold text-[#09090B]/75 mt-1">JEE, NEET, NDA, CDS, JKSSB, SSC</p>
               </div>
             </div>
@@ -80,11 +80,11 @@ export default function AboutPage() {
 
           {/* Vision & Mission Cards */}
           <div className="lg:col-span-5 space-y-5">
-            <div className="card-elevated rounded-2xl p-6 bg-[#09090B] text-white border-l-4 border-l-[#E4E4E7]">
-              <div className="w-11 h-11 rounded-xl bg-[#E4E4E7] text-[#09090B] flex items-center justify-center mb-4">
+            <div className="card-elevated rounded-2xl p-6 bg-[#09090B] text-white border-l-4 border-l-[#D6B66B]">
+              <div className="w-11 h-11 rounded-xl bg-[#D6B66B] text-[#09090B] flex items-center justify-center mb-4">
                 <Eye className="w-6 h-6" />
               </div>
-              <h3 className="font-serif-display text-2xl font-bold text-[#E4E4E7]">
+              <h3 className="font-serif-display text-2xl font-bold text-[#D6B66B]">
                 Our Vision
               </h3>
               <p className="text-sm text-white/85 mt-2 leading-relaxed">
@@ -92,8 +92,8 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="card-elevated rounded-2xl p-6 bg-white border-l-4 border-l-[#27272A]">
-              <div className="w-11 h-11 rounded-xl bg-[#27272A] text-white flex items-center justify-center mb-4">
+            <div className="card-elevated rounded-2xl p-6 bg-white border-l-4 border-l-[#8C702B]">
+              <div className="w-11 h-11 rounded-xl bg-[#8C702B] text-white flex items-center justify-center mb-4">
                 <Target className="w-6 h-6" />
               </div>
               <h3 className="font-serif-display text-2xl font-bold text-[#09090B]">
@@ -108,10 +108,10 @@ export default function AboutPage() {
       </section>
 
       {/* 2. Teaching Philosophy, Conceptual Clarity & Student Development */}
-      <section className="py-16 bg-[#F4F4F5] border-y border-[#09090B]/10">
+      <section className="py-16 bg-[#F9F5EB] border-y border-[#09090B]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#27272A]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#8C702B]">
               Our Pedagogical Pillars
             </span>
             <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-[#09090B] mt-2">
@@ -121,7 +121,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="card-elevated rounded-2xl p-7 bg-white">
-              <div className="w-12 h-12 rounded-xl bg-[#09090B] text-[#E4E4E7] flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-xl bg-[#09090B] text-[#D6B66B] flex items-center justify-center mb-4">
                 <Compass className="w-6 h-6" />
               </div>
               <h3 className="font-serif-display text-xl font-bold text-[#09090B]">
@@ -133,7 +133,7 @@ export default function AboutPage() {
             </div>
 
             <div className="card-elevated rounded-2xl p-7 bg-white">
-              <div className="w-12 h-12 rounded-xl bg-[#27272A] text-white flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-xl bg-[#8C702B] text-white flex items-center justify-center mb-4">
                 <Lightbulb className="w-6 h-6" />
               </div>
               <h3 className="font-serif-display text-xl font-bold text-[#09090B]">
@@ -145,7 +145,7 @@ export default function AboutPage() {
             </div>
 
             <div className="card-elevated rounded-2xl p-7 bg-white">
-              <div className="w-12 h-12 rounded-xl bg-[#09090B] text-[#E4E4E7] flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-xl bg-[#09090B] text-[#D6B66B] flex items-center justify-center mb-4">
                 <Users className="w-6 h-6" />
               </div>
               <h3 className="font-serif-display text-xl font-bold text-[#09090B]">
@@ -163,7 +163,7 @@ export default function AboutPage() {
       <section className="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl bg-[#09090B] text-white p-8 sm:p-12 lg:p-14 shadow-2xl relative overflow-hidden">
           <div className="max-w-3xl mb-10">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D6B66B] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
               Distinction & Trust
             </span>
             <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-white mt-3">
@@ -221,7 +221,7 @@ export default function AboutPage() {
                 key={idx}
                 className="p-4 rounded-2xl bg-white/6 border border-white/15 flex items-start gap-3.5"
               >
-                <CheckCircle2 className="w-5 h-5 text-[#E4E4E7] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-5 h-5 text-[#D6B66B] shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-sm sm:text-base text-white">{item.title}</h3>
                   <p className="text-xs sm:text-sm text-white/75 mt-0.5">{item.desc}</p>
@@ -234,10 +234,10 @@ export default function AboutPage() {
 
       {/* 4. Professional Faculty Introduction */}
       <section className="pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-[#F4F4F5] border border-[#09090B]/10 p-8 sm:p-10">
+        <div className="rounded-3xl bg-[#F9F5EB] border border-[#09090B]/10 p-8 sm:p-10">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#27272A]">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#8C702B]">
                 Academic Leadership
               </span>
               <h2 className="font-serif-display text-3xl font-bold text-[#09090B] mt-1">
@@ -249,7 +249,7 @@ export default function AboutPage() {
             </div>
             <Link
               to="/faculty"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#27272A] hover:bg-[#09090B] text-white text-sm font-bold transition-colors shrink-0"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#8C702B] hover:bg-[#09090B] text-white text-sm font-bold transition-colors shrink-0"
             >
               View Faculty Profiles
               <ArrowRight className="w-4 h-4" />
@@ -259,7 +259,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {qualificationsList.map((q, idx) => (
               <div key={idx} className="bg-white rounded-2xl p-5 border border-[#09090B]/10">
-                <div className="w-10 h-10 rounded-lg bg-[#09090B] text-[#E4E4E7] flex items-center justify-center mb-3">
+                <div className="w-10 h-10 rounded-lg bg-[#09090B] text-[#D6B66B] flex items-center justify-center mb-3">
                   <GraduationCap className="w-5 h-5" />
                 </div>
                 <h3 className="font-serif-display text-lg font-bold text-[#09090B]">{q.code}</h3>

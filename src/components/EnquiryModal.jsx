@@ -73,9 +73,9 @@ export default function EnquiryModal() {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#09090B]/75 backdrop-blur-sm animate-fadeIn">
       <div className="relative w-full max-w-lg rounded-2xl bg-[#FFFFFF] border border-[#09090B]/15 shadow-2xl overflow-hidden max-h-[92vh] flex flex-col">
         {/* Header */}
-        <div className="bg-[#09090B] text-white px-6 py-4 flex items-center justify-between border-b-2 border-[#E4E4E7]">
+        <div className="bg-[#09090B] text-white px-6 py-4 flex items-center justify-between border-b-2 border-[#D6B66B]">
           <div>
-            <span className="text-[11px] font-bold uppercase tracking-wider text-[#E4E4E7]">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[#D6B66B]">
               {enquiryModal.enquiryType === 'Fee Structure'
                 ? 'Fee Structure & Batch Enquiry'
                 : 'Quick Admission Enquiry'}
@@ -98,7 +98,7 @@ export default function EnquiryModal() {
         <div className="p-6 overflow-y-auto">
           {submitted ? (
             <div className="text-center py-6 space-y-4">
-              <div className="w-16 h-16 rounded-full bg-zinc-200 text-zinc-800 mx-auto flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-[#F3EBD8] text-zinc-800 mx-auto flex items-center justify-center">
                 <CheckCircle2 className="w-9 h-9" />
               </div>
               <h4 className="font-serif-display text-2xl font-bold text-[#09090B]">
@@ -151,7 +151,7 @@ export default function EnquiryModal() {
                     value={form.student_name}
                     onChange={e => setForm({ ...form, student_name: e.target.value })}
                     placeholder="Enter student name"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#8C702B]"
                   />
                 </div>
                 <div>
@@ -163,7 +163,7 @@ export default function EnquiryModal() {
                     value={form.parent_name}
                     onChange={e => setForm({ ...form, parent_name: e.target.value })}
                     placeholder="Enter parent/guardian name"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#8C702B]"
                   />
                 </div>
               </div>
@@ -179,7 +179,7 @@ export default function EnquiryModal() {
                     value={form.mobile}
                     onChange={e => setForm({ ...form, mobile: e.target.value })}
                     placeholder="10-digit mobile number"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm font-mono-num focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm font-mono-num focus:outline-none focus:border-[#8C702B]"
                   />
                 </div>
                 <div>
@@ -189,7 +189,7 @@ export default function EnquiryModal() {
                   <select
                     value={form.board}
                     onChange={e => setForm({ ...form, board: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#8C702B]"
                   >
                     <option value="JKBOSE">JKBOSE</option>
                     <option value="CBSE">CBSE</option>
@@ -208,7 +208,7 @@ export default function EnquiryModal() {
                   <select
                     value={form.course_interested}
                     onChange={e => setForm({ ...form, course_interested: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#8C702B]"
                   >
                     {courses.map(c => (
                       <option key={c.id} value={c.title}>
@@ -226,7 +226,7 @@ export default function EnquiryModal() {
                   <select
                     value={form.preferred_batch}
                     onChange={e => setForm({ ...form, preferred_batch: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#27272A]"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#8C702B]"
                   >
                     <option value="Morning Batch">Morning Batch</option>
                     <option value="Afternoon Batch">Afternoon Batch</option>
@@ -245,14 +245,14 @@ export default function EnquiryModal() {
                   value={form.message}
                   onChange={e => setForm({ ...form, message: e.target.value })}
                   placeholder="Any specific subjects, stream, or fee query..."
-                  className="w-full px-3.5 py-2 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#27272A]"
+                  className="w-full px-3.5 py-2 rounded-xl bg-white border border-[#09090B]/20 text-sm focus:outline-none focus:border-[#8C702B]"
                 />
               </div>
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3">
                 <a
                   href={`tel:+91${settings.phone_primary}`}
-                  className="text-xs font-semibold text-[#27272A] hover:underline flex items-center gap-1.5"
+                  className="text-xs font-semibold text-[#8C702B] hover:underline flex items-center gap-1.5"
                 >
                   <Phone className="w-3.5 h-3.5" />
                   Or call directly: +91 {settings.phone_primary}
@@ -260,7 +260,7 @@ export default function EnquiryModal() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-[#E4E4E7] hover:bg-[#E4E4E7] text-[#09090B] font-bold text-sm flex items-center justify-center gap-2 shadow-md cursor-pointer disabled:opacity-60"
+                  className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-[#D6B66B] hover:bg-[#D6B66B] text-[#09090B] font-bold text-sm flex items-center justify-center gap-2 shadow-md cursor-pointer disabled:opacity-60"
                 >
                   <Send className="w-4 h-4" />
                   {submitting ? 'Submitting...' : 'Submit Enquiry'}
