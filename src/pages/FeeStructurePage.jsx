@@ -35,15 +35,15 @@ export default function FeeStructurePage() {
   return (
     <div className="pb-20">
       {/* Page Header */}
-      <section className="hero-mesh text-white py-16 border-b-4 border-[#F59E0B]">
+      <section className="hero-mesh text-white py-16 border-b-4 border-[#E4E4E7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="max-w-3xl">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#F59E0B] text-[#0B2545] text-xs font-extrabold uppercase tracking-wider">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
                 Transparent Institutional Fee Schedule
               </span>
               <h1 className="font-serif-display text-4xl sm:text-5xl font-extrabold mt-4">
-                Course-Wise <span className="text-[#F59E0B]">Fee Structure</span>
+                Course-Wise <span className="text-[#E4E4E7]">Fee Structure</span>
               </h1>
               <p className="text-white/85 text-base sm:text-lg mt-3 leading-relaxed">
                 Organized fee tables for School Education (Classes 5th–12th), Graduation (B.A. & B.Sc. Mathematics), Competitive Examinations (JEE, NEET, NDA, CDS) and Job-Oriented Batches (JKSSB & SSC).
@@ -54,7 +54,7 @@ export default function FeeStructurePage() {
               <button
                 type="button"
                 onClick={() => openEnquiryModal('Fee Structure & Batch Enquiry', 'Fee Structure')}
-                className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-[#F59E0B] hover:bg-[#F59E0B] text-[#0B2545] font-extrabold text-sm shadow-lg transition-all cursor-pointer"
+                className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-[#E4E4E7] hover:bg-[#E4E4E7] text-[#09090B] font-extrabold text-sm shadow-lg transition-all cursor-pointer"
               >
                 Enquire About Fees
                 <ArrowRight className="w-4 h-4" />
@@ -66,18 +66,18 @@ export default function FeeStructurePage() {
 
       {/* Required Institutional Note & Admin Edit Notice */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <div className="rounded-2xl bg-[#FFFFFF] border-2 border-[#F59E0B] p-5 sm:p-6 shadow-md flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+        <div className="rounded-2xl bg-[#FFFFFF] border-2 border-[#E4E4E7] p-5 sm:p-6 shadow-md flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
           <div className="flex items-start gap-3.5">
-            <div className="w-10 h-10 rounded-xl bg-[#0B2545] text-[#F59E0B] flex items-center justify-center shrink-0 mt-0.5">
+            <div className="w-10 h-10 rounded-xl bg-[#09090B] text-[#E4E4E7] flex items-center justify-center shrink-0 mt-0.5">
               <Info className="w-5 h-5" />
             </div>
             <div>
-              <p className="font-serif-display text-lg font-bold text-[#0B2545]">
+              <p className="font-serif-display text-lg font-bold text-[#09090B]">
                 For the latest fee details and available batches, please contact the institute.
               </p>
-              <p className="text-xs sm:text-sm text-[#0B2545]/75 mt-1">
+              <p className="text-xs sm:text-sm text-[#09090B]/75 mt-1">
                 All fee fields below are managed directly by the institute administration via the{' '}
-                <Link to="/admin" className="text-[#1D4ED8] font-bold underline">
+                <Link to="/admin" className="text-[#27272A] font-bold underline">
                   Admin Dashboard
                 </Link>
                 . Unfilled placeholders indicate fees that depend on subject combinations, stream selection, or batch duration.
@@ -89,13 +89,13 @@ export default function FeeStructurePage() {
             <button
               type="button"
               onClick={() => openEnquiryModal('Fee Structure Enquiry', 'Fee Structure')}
-              className="px-4 py-2.5 rounded-xl bg-[#1D4ED8] hover:bg-[#0B2545] text-white font-bold text-xs transition-colors cursor-pointer"
+              className="px-4 py-2.5 rounded-xl bg-[#27272A] hover:bg-[#09090B] text-white font-bold text-xs transition-colors cursor-pointer"
             >
               Enquire About Fees
             </button>
             <a
               href={`tel:+91${settings.phone_primary}`}
-              className="px-4 py-2.5 rounded-xl bg-[#0B2545] text-[#F59E0B] font-mono-num font-bold text-xs flex items-center gap-1.5"
+              className="px-4 py-2.5 rounded-xl bg-[#09090B] text-[#E4E4E7] font-mono-num font-bold text-xs flex items-center gap-1.5"
             >
               <Phone className="w-3.5 h-3.5" />
               +91 {settings.phone_primary}
@@ -115,17 +115,17 @@ export default function FeeStructurePage() {
           return (
             <div
               key={gIdx}
-              className="rounded-2xl bg-white border border-[#0B2545]/12 shadow-sm overflow-hidden"
+              className="rounded-2xl bg-white border border-[#09090B]/12 shadow-sm overflow-hidden"
             >
               {/* Table Header Bar */}
-              <div className="bg-[#0B2545] text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-[#F59E0B]">
+              <div className="bg-[#09090B] text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-[#E4E4E7]">
                 <div className="flex items-center gap-3">
-                  <FileSpreadsheet className="w-5 h-5 text-[#F59E0B]" />
+                  <FileSpreadsheet className="w-5 h-5 text-[#E4E4E7]" />
                   <h2 className="font-serif-display text-xl sm:text-2xl font-bold text-white">
                     {groupName}
                   </h2>
                 </div>
-                <span className="text-xs font-semibold text-[#F59E0B]">
+                <span className="text-xs font-semibold text-[#E4E4E7]">
                   {groupRows.length} {groupRows.length === 1 ? 'Course' : 'Courses / Classes'}
                 </span>
               </div>
@@ -134,7 +134,7 @@ export default function FeeStructurePage() {
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">
                   <thead>
-                    <tr className="bg-[#F1F5F9] border-b border-[#0B2545]/10 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#0B2545]">
+                    <tr className="bg-[#F4F4F5] border-b border-[#09090B]/10 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#09090B]">
                       <th className="py-3.5 px-5 min-w-[230px]">Course / Class</th>
                       <th className="py-3.5 px-4 min-w-[150px]">Monthly Fee</th>
                       <th className="py-3.5 px-4 min-w-[150px]">Admission Fee</th>
@@ -143,7 +143,7 @@ export default function FeeStructurePage() {
                       <th className="py-3.5 px-4 text-right min-w-[130px]">Action</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#0B2545]/10 text-sm">
+                  <tbody className="divide-y divide-[#09090B]/10 text-sm">
                     {groupRows.map(row => {
                       const renderCell = val => {
                         const isPlaceholder =
@@ -151,20 +151,20 @@ export default function FeeStructurePage() {
                           val.includes('[') ||
                           val.toLowerCase().includes('to be updated');
                         return isPlaceholder ? (
-                          <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-amber-50 border border-amber-300/80 text-amber-900 text-xs font-medium">
+                          <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-100 border border-zinc-300 text-zinc-900 text-xs font-medium">
                             {val || '[To Be Updated by Admin]'}
                           </span>
                         ) : (
-                          <span className="font-mono-num font-bold text-[#0B2545]">{val}</span>
+                          <span className="font-mono-num font-bold text-[#09090B]">{val}</span>
                         );
                       };
 
                       return (
                         <tr
                           key={row.id}
-                          className="hover:bg-[#F1F5F9]/60 transition-colors"
+                          className="hover:bg-[#F4F4F5]/60 transition-colors"
                         >
-                          <td className="py-4 px-5 font-bold text-[#0B2545]">
+                          <td className="py-4 px-5 font-bold text-[#09090B]">
                             {row.course_name}
                           </td>
                           <td className="py-4 px-4">{renderCell(row.monthly_fee)}</td>
@@ -177,7 +177,7 @@ export default function FeeStructurePage() {
                               onClick={() =>
                                 openEnquiryModal(row.course_name, 'Fee Structure')
                               }
-                              className="px-3 py-1.5 rounded-lg bg-[#F59E0B] hover:bg-[#F59E0B] text-[#0B2545] font-bold text-xs transition-colors cursor-pointer"
+                              className="px-3 py-1.5 rounded-lg bg-[#E4E4E7] hover:bg-[#E4E4E7] text-[#09090B] font-bold text-xs transition-colors cursor-pointer"
                             >
                               Enquire Fee
                             </button>
@@ -195,7 +195,7 @@ export default function FeeStructurePage() {
 
       {/* Bottom Enquiry CTA Box */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-        <div className="rounded-3xl bg-[#0B2545] text-white p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="rounded-3xl bg-[#09090B] text-white p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
             <h3 className="font-serif-display text-2xl sm:text-3xl font-bold text-white">
               Need Exact Fee Details for Your Subject Combination?
@@ -208,7 +208,7 @@ export default function FeeStructurePage() {
             <button
               type="button"
               onClick={() => openEnquiryModal('Fee Structure & Installment Query', 'Fee Structure')}
-              className="px-6 py-3.5 rounded-xl bg-[#F59E0B] hover:bg-[#F59E0B] text-[#0B2545] font-extrabold text-sm cursor-pointer"
+              className="px-6 py-3.5 rounded-xl bg-[#E4E4E7] hover:bg-[#E4E4E7] text-[#09090B] font-extrabold text-sm cursor-pointer"
             >
               Enquire About Fees
             </button>
@@ -216,7 +216,7 @@ export default function FeeStructurePage() {
               to="/admin"
               className="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold flex items-center gap-1.5"
             >
-              <ShieldCheck className="w-4 h-4 text-[#F59E0B]" />
+              <ShieldCheck className="w-4 h-4 text-[#E4E4E7]" />
               Update Fees (Admin)
             </Link>
           </div>

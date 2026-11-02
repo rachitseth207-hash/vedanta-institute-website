@@ -47,11 +47,11 @@ export default function Navbar() {
   return (
     <>
       {/* Top Institutional Utility & Announcement Bar */}
-      <div className="bg-[#0B2545] text-[#FFFFFF] border-b border-white/10 text-xs">
+      <div className="bg-[#09090B] text-[#FFFFFF] border-b border-white/10 text-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
           {/* Dynamic Homepage Announcement */}
           <div className="flex items-center gap-2 text-center md:text-left">
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#1D4ED8] text-[#F59E0B] font-semibold text-[11px] shrink-0">
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#27272A] text-[#E4E4E7] font-semibold text-[11px] shrink-0">
               <Sparkles className="w-3 h-3" /> Notice
             </span>
             <p className="text-white/90 line-clamp-1 font-medium">
@@ -62,12 +62,12 @@ export default function Navbar() {
           {/* Verified Contact Info & Admin Portal Link */}
           <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">
             <span className="hidden xl:inline-flex items-center gap-1.5 text-white/80">
-              <MapPin className="w-3.5 h-3.5 text-[#F59E0B]" />
+              <MapPin className="w-3.5 h-3.5 text-[#E4E4E7]" />
               {settings.address}
             </span>
             <a
               href={`tel:+91${settings.phone_primary}`}
-              className="inline-flex items-center gap-1.5 font-mono-num text-[#F59E0B] hover:underline font-semibold"
+              className="inline-flex items-center gap-1.5 font-mono-num text-[#E4E4E7] hover:underline font-semibold"
             >
               <Phone className="w-3.5 h-3.5" />
               +91 {settings.phone_primary}
@@ -75,7 +75,7 @@ export default function Navbar() {
             {settings.phone_secondary && (
               <a
                 href={`tel:+91${settings.phone_secondary}`}
-                className="hidden sm:inline-flex items-center gap-1.5 font-mono-num text-white/90 hover:text-[#F59E0B] transition-colors"
+                className="hidden sm:inline-flex items-center gap-1.5 font-mono-num text-white/90 hover:text-[#E4E4E7] transition-colors"
               >
                 / {settings.phone_secondary}
               </a>
@@ -85,7 +85,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded bg-white/10 hover:bg-white/20 text-white/90 transition-colors text-[11px] font-medium"
               title="Institute Owner Admin Dashboard"
             >
-              <ShieldCheck className="w-3.5 h-3.5 text-[#F59E0B]" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#E4E4E7]" />
               Admin
             </Link>
           </div>
@@ -96,8 +96,8 @@ export default function Navbar() {
       <header
         className={`sticky top-0 z-40 transition-all duration-300 ${
           scrolled
-            ? 'bg-[#FFFFFF]/95 backdrop-blur-md shadow-md border-b border-[#0B2545]/10 py-2.5'
-            : 'bg-[#FFFFFF] border-b border-[#0B2545]/10 py-3.5'
+            ? 'bg-[#FFFFFF]/95 backdrop-blur-md shadow-md border-b border-[#09090B]/10 py-2.5'
+            : 'bg-[#FFFFFF] border-b border-[#09090B]/10 py-3.5'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3">
@@ -110,9 +110,9 @@ export default function Navbar() {
             {admissionsOpen ? (
               <Link
                 to="/admissions"
-                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0B2545] text-[#F59E0B] border border-[#F59E0B]/50 text-xs font-bold tracking-wide shadow-sm hover:bg-[#1D4ED8] transition-colors"
+                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#09090B] text-[#E4E4E7] border border-[#E4E4E7]/50 text-xs font-bold tracking-wide shadow-sm hover:bg-[#27272A] transition-colors"
               >
-                <span className="w-2 h-2 rounded-full bg-[#F59E0B] animate-pulse-gold" />
+                <span className="w-2 h-2 rounded-full bg-[#E4E4E7] animate-pulse-gold" />
                 Admissions Open
               </Link>
             ) : (
@@ -132,8 +132,8 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   `px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-semibold transition-all ${
                     isActive
-                      ? 'bg-[#1D4ED8] text-[#FFFFFF] shadow-sm'
-                      : 'text-[#0B2545]/85 hover:text-[#1D4ED8] hover:bg-[#1D4ED8]/8'
+                      ? 'bg-[#27272A] text-[#FFFFFF] shadow-sm'
+                      : 'text-[#09090B]/85 hover:text-[#27272A] hover:bg-[#27272A]/8'
                   }`
                 }
               >
@@ -147,7 +147,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => openEnquiryModal('', 'Admission')}
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#F59E0B] hover:bg-[#F59E0B] text-[#0B2545] font-bold text-xs xl:text-sm shadow-sm hover:shadow transition-all cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#E4E4E7] hover:bg-[#E4E4E7] text-[#09090B] font-bold text-xs xl:text-sm shadow-sm hover:shadow transition-all cursor-pointer"
             >
               Enquire Now
               <ArrowRight className="w-4 h-4" />
@@ -159,16 +159,16 @@ export default function Navbar() {
             {admissionsOpen && (
               <Link
                 to="/admissions"
-                className="inline-flex sm:hidden items-center gap-1 px-2.5 py-1 rounded-full bg-[#0B2545] text-[#F59E0B] text-[10px] font-bold"
+                className="inline-flex sm:hidden items-center gap-1 px-2.5 py-1 rounded-full bg-[#09090B] text-[#E4E4E7] text-[10px] font-bold"
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-ping" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#E4E4E7] animate-ping" />
                 Admissions Open
               </Link>
             )}
             <button
               type="button"
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2.5 rounded-xl bg-[#F1F5F9] text-[#0B2545] hover:bg-[#1D4ED8] hover:text-white transition-colors"
+              className="p-2.5 rounded-xl bg-[#F4F4F5] text-[#09090B] hover:bg-[#27272A] hover:text-white transition-colors"
               aria-label="Toggle Menu"
             >
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -178,7 +178,7 @@ export default function Navbar() {
 
         {/* Mobile Drawer */}
         {mobileOpen && (
-          <div className="lg:hidden bg-[#FFFFFF] border-t border-[#0B2545]/10 shadow-xl px-4 pt-3 pb-6 space-y-3">
+          <div className="lg:hidden bg-[#FFFFFF] border-t border-[#09090B]/10 shadow-xl px-4 pt-3 pb-6 space-y-3">
             <div className="grid grid-cols-2 gap-1.5">
               {navItems.map(item => (
                 <NavLink
@@ -188,8 +188,8 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     `px-3.5 py-2.5 rounded-xl text-sm font-semibold transition-colors ${
                       isActive
-                        ? 'bg-[#1D4ED8] text-white'
-                        : 'bg-[#F1F5F9] text-[#0B2545] hover:bg-[#1D4ED8]/10'
+                        ? 'bg-[#27272A] text-white'
+                        : 'bg-[#F4F4F5] text-[#09090B] hover:bg-[#27272A]/10'
                     }`
                   }
                 >
@@ -198,23 +198,23 @@ export default function Navbar() {
               ))}
             </div>
 
-            <div className="pt-2 border-t border-[#0B2545]/10 flex flex-col sm:flex-row gap-2.5">
+            <div className="pt-2 border-t border-[#09090B]/10 flex flex-col sm:flex-row gap-2.5">
               <button
                 type="button"
                 onClick={() => {
                   setMobileOpen(false);
                   openEnquiryModal('', 'Admission');
                 }}
-                className="w-full py-3 rounded-xl bg-[#F59E0B] text-[#0B2545] font-bold text-sm flex items-center justify-center gap-2 shadow-sm"
+                className="w-full py-3 rounded-xl bg-[#E4E4E7] text-[#09090B] font-bold text-sm flex items-center justify-center gap-2 shadow-sm"
               >
                 <GraduationCap className="w-4 h-4" />
                 Enquire Now — Admissions Open
               </button>
               <a
                 href={`tel:+91${settings.phone_primary}`}
-                className="w-full py-3 rounded-xl bg-[#0B2545] text-white font-semibold text-sm flex items-center justify-center gap-2"
+                className="w-full py-3 rounded-xl bg-[#09090B] text-white font-semibold text-sm flex items-center justify-center gap-2"
               >
-                <Phone className="w-4 h-4 text-[#F59E0B]" />
+                <Phone className="w-4 h-4 text-[#E4E4E7]" />
                 Call: +91 {settings.phone_primary}
               </a>
             </div>

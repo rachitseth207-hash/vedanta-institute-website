@@ -91,13 +91,13 @@ export default function AdmissionPage() {
   return (
     <div className="pb-20">
       {/* Header Banner */}
-      <section className="hero-mesh text-white py-16 border-b-4 border-[#F59E0B]">
+      <section className="hero-mesh text-white py-16 border-b-4 border-[#E4E4E7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#F59E0B] text-[#0B2545] text-xs font-extrabold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
             Admissions Open • Academic & Competitive Batches
           </span>
           <h1 className="font-serif-display text-4xl sm:text-5xl font-extrabold mt-4">
-            Admission & <span className="text-[#F59E0B]">Batch Enquiry Form</span>
+            Admission & <span className="text-[#E4E4E7]">Batch Enquiry Form</span>
           </h1>
           <p className="text-white/85 text-base sm:text-lg max-w-3xl mt-3 leading-relaxed">
             Register your interest for Classes 5th to 12th (JKBOSE & CBSE), B.A., B.Sc. Mathematics, JEE, NEET, NDA, CDS, JKSSB, SSC, or Home Tuition Facility.
@@ -108,25 +108,25 @@ export default function AdmissionPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           {/* Left Column: Complete Admission Enquiry Form */}
-          <div className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-[#0B2545]/10">
+          <div className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-[#09090B]/10">
             {successData ? (
               <div className="py-8 text-center space-y-5">
-                <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 mx-auto flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-zinc-200 text-zinc-800 mx-auto flex items-center justify-center">
                   <CheckCircle2 className="w-10 h-10" />
                 </div>
-                <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold">
+                <span className="px-3 py-1 rounded-full bg-zinc-100 text-zinc-900 text-xs font-bold">
                   Enquiry Reference #{successData.id}
                 </span>
-                <h2 className="font-serif-display text-3xl font-bold text-[#0B2545]">
+                <h2 className="font-serif-display text-3xl font-bold text-[#09090B]">
                   Admission Enquiry Submitted!
                 </h2>
-                <p className="text-sm sm:text-base text-[#0B2545]/75 max-w-lg mx-auto leading-relaxed">
+                <p className="text-sm sm:text-base text-[#09090B]/75 max-w-lg mx-auto leading-relaxed">
                   Thank you, <strong>{successData.student_name}</strong> (Parent/Guardian:{' '}
                   <strong>{successData.parent_name}</strong>). We have recorded your admission enquiry for{' '}
                   <strong>{successData.course_interested}</strong> ({successData.board} •{' '}
                   {successData.preferred_batch}).
                 </p>
-                <div className="p-4 rounded-2xl bg-[#F1F5F9] max-w-md mx-auto text-xs text-[#0B2545]/80">
+                <div className="p-4 rounded-2xl bg-[#F4F4F5] max-w-md mx-auto text-xs text-[#09090B]/80">
                   Our coordinator <strong>{settings.contact_person}</strong> will contact you on{' '}
                   <strong className="font-mono-num">{successData.mobile}</strong> with batch timings and fee details.
                 </div>
@@ -137,7 +137,7 @@ export default function AdmissionPage() {
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs"
+                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-bold text-xs"
                   >
                     <MessageCircle className="w-4 h-4" />
                     Send Details via WhatsApp
@@ -157,7 +157,7 @@ export default function AdmissionPage() {
                         message: ''
                       });
                     }}
-                    className="px-5 py-3 rounded-xl bg-[#0B2545] text-white font-bold text-xs cursor-pointer"
+                    className="px-5 py-3 rounded-xl bg-[#09090B] text-white font-bold text-xs cursor-pointer"
                   >
                     Submit Another Enquiry
                   </button>
@@ -165,14 +165,14 @@ export default function AdmissionPage() {
               </div>
             ) : (
               <>
-                <div className="border-b border-[#0B2545]/10 pb-5 mb-6">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#1D4ED8]">
+                <div className="border-b border-[#09090B]/10 pb-5 mb-6">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#27272A]">
                     Official Registration & Counselling Form
                   </span>
-                  <h2 className="font-serif-display text-2xl sm:text-3xl font-bold text-[#0B2545] mt-1">
+                  <h2 className="font-serif-display text-2xl sm:text-3xl font-bold text-[#09090B] mt-1">
                     Student Admission Enquiry
                   </h2>
-                  <p className="text-xs sm:text-sm text-[#0B2545]/70 mt-1">
+                  <p className="text-xs sm:text-sm text-[#09090B]/70 mt-1">
                     Fill out the details below. Fields marked with <span className="text-red-600">*</span> are mandatory.
                   </p>
                 </div>
@@ -187,7 +187,7 @@ export default function AdmissionPage() {
                 <form onSubmit={validateAndSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-bold text-[#0B2545] mb-1.5">
+                      <label className="block text-xs font-bold text-[#09090B] mb-1.5">
                         Student Name <span className="text-red-600">*</span>
                       </label>
                       <input
@@ -196,12 +196,12 @@ export default function AdmissionPage() {
                         value={form.student_name}
                         onChange={e => setForm({ ...form, student_name: e.target.value })}
                         placeholder="Enter student's full name"
-                        className="w-full px-4 py-3 rounded-xl bg-[#F1F5F9] border border-[#0B2545]/15 text-sm focus:bg-white focus:outline-none focus:border-[#1D4ED8]"
+                        className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm focus:bg-white focus:outline-none focus:border-[#27272A]"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-[#0B2545] mb-1.5">
+                      <label className="block text-xs font-bold text-[#09090B] mb-1.5">
                         Parent / Guardian Name <span className="text-red-600">*</span>
                       </label>
                       <input
@@ -210,14 +210,14 @@ export default function AdmissionPage() {
                         value={form.parent_name}
                         onChange={e => setForm({ ...form, parent_name: e.target.value })}
                         placeholder="Enter father/mother/guardian name"
-                        className="w-full px-4 py-3 rounded-xl bg-[#F1F5F9] border border-[#0B2545]/15 text-sm focus:bg-white focus:outline-none focus:border-[#1D4ED8]"
+                        className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm focus:bg-white focus:outline-none focus:border-[#27272A]"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-bold text-[#0B2545] mb-1.5">
+                      <label className="block text-xs font-bold text-[#09090B] mb-1.5">
                         Mobile Number <span className="text-red-600">*</span>
                       </label>
                       <input
@@ -226,32 +226,32 @@ export default function AdmissionPage() {
                         value={form.mobile}
                         onChange={e => setForm({ ...form, mobile: e.target.value })}
                         placeholder="10-digit active mobile number"
-                        className="w-full px-4 py-3 rounded-xl bg-[#F1F5F9] border border-[#0B2545]/15 text-sm font-mono-num focus:bg-white focus:outline-none focus:border-[#1D4ED8]"
+                        className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm font-mono-num focus:bg-white focus:outline-none focus:border-[#27272A]"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-[#0B2545] mb-1.5">
-                        Email Address <span className="text-[#0B2545]/50 font-normal">(Optional)</span>
+                      <label className="block text-xs font-bold text-[#09090B] mb-1.5">
+                        Email Address <span className="text-[#09090B]/50 font-normal">(Optional)</span>
                       </label>
                       <input
                         type="email"
                         value={form.email}
                         onChange={e => setForm({ ...form, email: e.target.value })}
                         placeholder="student@example.com (optional)"
-                        className="w-full px-4 py-3 rounded-xl bg-[#F1F5F9] border border-[#0B2545]/15 text-sm focus:bg-white focus:outline-none focus:border-[#1D4ED8]"
+                        className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm focus:bg-white focus:outline-none focus:border-[#27272A]"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#0B2545] mb-1.5">
+                    <label className="block text-xs font-bold text-[#09090B] mb-1.5">
                       Class / Course Interested In <span className="text-red-600">*</span>
                     </label>
                     <select
                       value={form.course_interested}
                       onChange={e => setForm({ ...form, course_interested: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#F1F5F9] border border-[#0B2545]/15 text-sm font-semibold text-[#0B2545] focus:bg-white focus:outline-none focus:border-[#1D4ED8]"
+                      className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm font-semibold text-[#09090B] focus:bg-white focus:outline-none focus:border-[#27272A]"
                     >
                       {courses.map(c => (
                         <option key={c.id} value={c.title}>
@@ -264,13 +264,13 @@ export default function AdmissionPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-xs font-bold text-[#0B2545] mb-1.5">
+                      <label className="block text-xs font-bold text-[#09090B] mb-1.5">
                         Board / Examination Body <span className="text-red-600">*</span>
                       </label>
                       <select
                         value={form.board}
                         onChange={e => setForm({ ...form, board: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#F1F5F9] border border-[#0B2545]/15 text-sm font-semibold text-[#0B2545] focus:bg-white focus:outline-none focus:border-[#1D4ED8]"
+                        className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm font-semibold text-[#09090B] focus:bg-white focus:outline-none focus:border-[#27272A]"
                       >
                         <option value="CBSE">CBSE</option>
                         <option value="JKBOSE">JKBOSE</option>
@@ -279,13 +279,13 @@ export default function AdmissionPage() {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-[#0B2545] mb-1.5">
+                      <label className="block text-xs font-bold text-[#09090B] mb-1.5">
                         Preferred Batch <span className="text-red-600">*</span>
                       </label>
                       <select
                         value={form.preferred_batch}
                         onChange={e => setForm({ ...form, preferred_batch: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#F1F5F9] border border-[#0B2545]/15 text-sm font-semibold text-[#0B2545] focus:bg-white focus:outline-none focus:border-[#1D4ED8]"
+                        className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm font-semibold text-[#09090B] focus:bg-white focus:outline-none focus:border-[#27272A]"
                       >
                         <option value="Morning Batch">Morning Batch</option>
                         <option value="Afternoon Batch">Afternoon Batch</option>
@@ -296,7 +296,7 @@ export default function AdmissionPage() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#0B2545] mb-1.5">
+                    <label className="block text-xs font-bold text-[#09090B] mb-1.5">
                       Message / Subjects / Specific Query
                     </label>
                     <textarea
@@ -304,14 +304,14 @@ export default function AdmissionPage() {
                       value={form.message}
                       onChange={e => setForm({ ...form, message: e.target.value })}
                       placeholder="Mention specific subjects, stream (Medical/Non-Medical/Commerce/Arts), or any question..."
-                      className="w-full px-4 py-3 rounded-xl bg-[#F1F5F9] border border-[#0B2545]/15 text-sm focus:bg-white focus:outline-none focus:border-[#1D4ED8]"
+                      className="w-full px-4 py-3 rounded-xl bg-[#F4F4F5] border border-[#09090B]/15 text-sm focus:bg-white focus:outline-none focus:border-[#27272A]"
                     />
                   </div>
 
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="w-full py-4 rounded-xl bg-[#F59E0B] hover:bg-[#F59E0B] text-[#0B2545] font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg transition-all cursor-pointer disabled:opacity-60"
+                    className="w-full py-4 rounded-xl bg-[#E4E4E7] hover:bg-[#E4E4E7] text-[#09090B] font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg transition-all cursor-pointer disabled:opacity-60"
                   >
                     <Send className="w-4 h-4" />
                     {submitting ? 'Submitting Admission Enquiry...' : 'Submit Enquiry'}
@@ -323,8 +323,8 @@ export default function AdmissionPage() {
 
           {/* Right Column: Admission Process & Direct Desk */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="rounded-3xl bg-[#0B2545] text-white p-7 border-b-4 border-[#F59E0B] space-y-5">
-              <span className="px-3 py-1 rounded-full bg-[#F59E0B] text-[#0B2545] text-xs font-extrabold uppercase">
+            <div className="rounded-3xl bg-[#09090B] text-white p-7 border-b-4 border-[#E4E4E7] space-y-5">
+              <span className="px-3 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase">
                 Direct Admission Helpdesk
               </span>
               <h3 className="font-serif-display text-2xl font-bold">
@@ -336,22 +336,22 @@ export default function AdmissionPage() {
 
               <div className="space-y-3 pt-2 text-sm">
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#F59E0B] shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-[#E4E4E7] shrink-0 mt-0.5" />
                   <span>{settings.address}</span>
                 </div>
                 <div className="flex items-center gap-3 font-mono-num">
-                  <Phone className="w-5 h-5 text-[#F59E0B] shrink-0" />
+                  <Phone className="w-5 h-5 text-[#E4E4E7] shrink-0" />
                   <div>
-                    <a href={`tel:+91${settings.phone_primary}`} className="block font-bold hover:text-[#F59E0B]">
+                    <a href={`tel:+91${settings.phone_primary}`} className="block font-bold hover:text-[#E4E4E7]">
                       +91 {settings.phone_primary}
                     </a>
-                    <a href={`tel:+91${settings.phone_secondary}`} className="block font-bold hover:text-[#F59E0B]">
+                    <a href={`tel:+91${settings.phone_secondary}`} className="block font-bold hover:text-[#E4E4E7]">
                       +91 {settings.phone_secondary}
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Clock className="w-5 h-5 text-[#F59E0B] shrink-0" />
+                  <Clock className="w-5 h-5 text-[#E4E4E7] shrink-0" />
                   <span className="text-xs text-white/80">{settings.office_hours}</span>
                 </div>
               </div>
@@ -359,7 +359,7 @@ export default function AdmissionPage() {
               <div className="pt-2 flex flex-col sm:flex-row gap-3">
                 <a
                   href={`tel:+91${settings.phone_primary}`}
-                  className="flex-1 py-3 px-4 rounded-xl bg-[#F59E0B] text-[#0B2545] font-bold text-xs text-center"
+                  className="flex-1 py-3 px-4 rounded-xl bg-[#E4E4E7] text-[#09090B] font-bold text-xs text-center"
                 >
                   Call Now
                 </a>
@@ -367,7 +367,7 @@ export default function AdmissionPage() {
                   href={`https://wa.me/${settings.whatsapp_number || '917298329209'}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-3 px-4 rounded-xl bg-emerald-600 text-white font-bold text-xs text-center"
+                  className="flex-1 py-3 px-4 rounded-xl bg-zinc-800 text-white font-bold text-xs text-center"
                 >
                   WhatsApp Chat
                 </a>
@@ -375,8 +375,8 @@ export default function AdmissionPage() {
             </div>
 
             {/* Simple 3-Step Admission Process */}
-            <div className="rounded-3xl bg-white p-7 border border-[#0B2545]/10 space-y-4">
-              <h3 className="font-serif-display text-xl font-bold text-[#0B2545]">
+            <div className="rounded-3xl bg-white p-7 border border-[#09090B]/10 space-y-4">
+              <h3 className="font-serif-display text-xl font-bold text-[#09090B]">
                 How Admission Works
               </h3>
               <div className="space-y-4">
@@ -398,12 +398,12 @@ export default function AdmissionPage() {
                   }
                 ].map(s => (
                   <div key={s.step} className="flex items-start gap-3.5">
-                    <div className="w-7 h-7 rounded-full bg-[#1D4ED8] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-7 h-7 rounded-full bg-[#27272A] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
                       {s.step}
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-[#0B2545]">{s.title}</h4>
-                      <p className="text-xs text-[#0B2545]/70 mt-0.5">{s.desc}</p>
+                      <h4 className="font-bold text-sm text-[#09090B]">{s.title}</h4>
+                      <p className="text-xs text-[#09090B]/70 mt-0.5">{s.desc}</p>
                     </div>
                   </div>
                 ))}

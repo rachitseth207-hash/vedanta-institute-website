@@ -28,7 +28,7 @@ export default function FloatingActions() {
           onClick={scrollToTop}
           aria-label="Back to top"
           title="Back to top"
-          className="w-11 h-11 rounded-full bg-[#0B2545] text-[#F59E0B] border border-[#F59E0B]/40 shadow-lg hover:bg-[#1D4ED8] hover:text-white flex items-center justify-center transition-all cursor-pointer"
+          className="w-11 h-11 rounded-full bg-[#09090B] text-[#E4E4E7] border border-[#E4E4E7]/40 shadow-lg hover:bg-[#27272A] hover:text-white flex items-center justify-center transition-all cursor-pointer"
         >
           <ArrowUp className="w-5 h-5" />
         </button>
@@ -39,9 +39,9 @@ export default function FloatingActions() {
         href={`tel:+91${settings.phone_primary}`}
         aria-label={`Call Vedanta Institute at +91 ${settings.phone_primary}`}
         title={`Call +91 ${settings.phone_primary}`}
-        className="w-12 h-12 rounded-full bg-[#1D4ED8] hover:bg-[#0B2545] text-white border-2 border-[#FFFFFF] shadow-lg flex items-center justify-center transition-transform hover:scale-105"
+        className="w-12 h-12 rounded-full bg-[#27272A] hover:bg-[#09090B] text-white border-2 border-[#FFFFFF] shadow-lg flex items-center justify-center transition-transform hover:scale-105"
       >
-        <Phone className="w-5 h-5 text-[#F59E0B]" />
+        <Phone className="w-5 h-5 text-[#E4E4E7]" />
       </a>
 
       {/* WhatsApp Floating Contact Button */}
@@ -51,7 +51,7 @@ export default function FloatingActions() {
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
         title="Enquire on WhatsApp"
-        className="group flex items-center gap-2 pl-3.5 pr-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-xl border-2 border-white transition-all hover:scale-105"
+        className="group flex items-center gap-2 pl-3.5 pr-4 py-3 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white font-bold text-xs shadow-xl border-2 border-white transition-all hover:scale-105"
       >
         <MessageCircle className="w-5 h-5 fill-white/20" />
         <span className="hidden sm:inline">WhatsApp Us</span>

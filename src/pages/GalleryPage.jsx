@@ -31,25 +31,25 @@ function PlaceholderIllustration({ category, title }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="600" height="400" fill="#0B2545" />
-      <circle cx="510" cy="80" r="120" fill="#1D4ED8" fillOpacity="0.55" />
-      <circle cx="90" cy="340" r="140" fill="#F59E0B" fillOpacity="0.12" />
+      <rect width="600" height="400" fill="#09090B" />
+      <circle cx="510" cy="80" r="120" fill="#27272A" fillOpacity="0.55" />
+      <circle cx="90" cy="340" r="140" fill="#E4E4E7" fillOpacity="0.12" />
       <rect
         x="36"
         y="36"
         width="528"
         height="328"
         rx="20"
-        fill="#0F2952"
-        stroke="#F59E0B"
+        fill="#18181B"
+        stroke="#E4E4E7"
         strokeOpacity="0.4"
         strokeWidth="2"
       />
-      <rect x="64" y="68" width="210" height="32" rx="8" fill="#1D4ED8" />
+      <rect x="64" y="68" width="210" height="32" rx="8" fill="#27272A" />
       <text
         x="80"
         y="89"
-        fill="#F59E0B"
+        fill="#E4E4E7"
         fontFamily="Plus Jakarta Sans, sans-serif"
         fontWeight="bold"
         fontSize="12"
@@ -69,7 +69,7 @@ function PlaceholderIllustration({ category, title }) {
       <text
         x="64"
         y="182"
-        fill="#F59E0B"
+        fill="#E4E4E7"
         fontFamily="Plus Jakarta Sans, sans-serif"
         fontWeight="bold"
         fontSize="14"
@@ -87,11 +87,11 @@ function PlaceholderIllustration({ category, title }) {
       >
         {title.slice(0, 56)}
       </text>
-      <rect x="64" y="284" width="280" height="40" rx="10" fill="#F59E0B" fillOpacity="0.15" stroke="#F59E0B" strokeOpacity="0.5" />
+      <rect x="64" y="284" width="280" height="40" rx="10" fill="#E4E4E7" fillOpacity="0.15" stroke="#E4E4E7" strokeOpacity="0.5" />
       <text
         x="82"
         y="309"
-        fill="#F59E0B"
+        fill="#E4E4E7"
         fontFamily="Plus Jakarta Sans, sans-serif"
         fontWeight="bold"
         fontSize="12"
@@ -120,14 +120,14 @@ export default function GalleryPage() {
   return (
     <div className="pb-20">
       {/* Header Banner */}
-      <section className="hero-mesh text-white py-16 border-b-4 border-[#F59E0B]">
+      <section className="hero-mesh text-white py-16 border-b-4 border-[#E4E4E7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#F59E0B] text-[#0B2545] text-xs font-extrabold uppercase tracking-wider">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#E4E4E7] text-[#09090B] text-xs font-extrabold uppercase tracking-wider">
               Campus Life & Academic Moments
             </span>
             <h1 className="font-serif-display text-4xl sm:text-5xl font-extrabold mt-4">
-              Institute <span className="text-[#F59E0B]">Photo Gallery</span>
+              Institute <span className="text-[#E4E4E7]">Photo Gallery</span>
             </h1>
             <p className="text-white/85 text-base sm:text-lg max-w-2xl mt-3 leading-relaxed">
               Explore glimpses of Classroom Activities, Teaching Sessions, Institute Events, Student Activities, and Celebrations at Vedanta Institute.
@@ -135,7 +135,7 @@ export default function GalleryPage() {
           </div>
           <Link
             to="/admin"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-[#F59E0B] border border-[#F59E0B]/40 text-xs font-bold shrink-0"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-[#E4E4E7] border border-[#E4E4E7]/40 text-xs font-bold shrink-0"
           >
             <Camera className="w-4 h-4" />
             Upload / Replace Photos in Admin
@@ -145,7 +145,7 @@ export default function GalleryPage() {
 
       {/* Category Filter Tabs */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <div className="flex flex-wrap items-center gap-2 bg-white p-3 rounded-2xl border border-[#0B2545]/10 shadow-sm">
+        <div className="flex flex-wrap items-center gap-2 bg-white p-3 rounded-2xl border border-[#09090B]/10 shadow-sm">
           {GALLERY_CATEGORIES.map(cat => (
             <button
               key={cat}
@@ -153,8 +153,8 @@ export default function GalleryPage() {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                 activeCategory === cat
-                  ? 'bg-[#0B2545] text-[#F59E0B] shadow-xs'
-                  : 'bg-[#F1F5F9] text-[#0B2545]/80 hover:bg-[#1D4ED8]/10'
+                  ? 'bg-[#09090B] text-[#E4E4E7] shadow-xs'
+                  : 'bg-[#F4F4F5] text-[#09090B]/80 hover:bg-[#27272A]/10'
               }`}
             >
               {cat}
@@ -172,7 +172,7 @@ export default function GalleryPage() {
               onClick={() => setSelectedItem(item)}
               className="card-elevated rounded-2xl bg-white overflow-hidden cursor-pointer group flex flex-col justify-between"
             >
-              <div className="relative aspect-[16/10] bg-[#0B2545] overflow-hidden">
+              <div className="relative aspect-[16/10] bg-[#09090B] overflow-hidden">
                 {item.image_url ? (
                   <img
                     src={item.image_url}
@@ -183,27 +183,27 @@ export default function GalleryPage() {
                   <PlaceholderIllustration category={item.category} title={item.title} />
                 )}
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#09090B]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-4">
                   <span className="text-xs font-bold text-white">Click to Enlarge</span>
-                  <Maximize2 className="w-4 h-4 text-[#F59E0B]" />
+                  <Maximize2 className="w-4 h-4 text-[#E4E4E7]" />
                 </div>
               </div>
 
               <div className="p-5">
                 <div className="flex items-center justify-between gap-2 mb-2">
-                  <span className="px-2.5 py-0.5 rounded-md bg-[#1D4ED8]/10 text-[#1D4ED8] text-[11px] font-bold">
+                  <span className="px-2.5 py-0.5 rounded-md bg-[#27272A]/10 text-[#27272A] text-[11px] font-bold">
                     {item.category}
                   </span>
                   {item.is_placeholder && !item.image_url && (
-                    <span className="text-[11px] font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded">
+                    <span className="text-[11px] font-semibold text-zinc-800 bg-zinc-100 px-2 py-0.5 rounded">
                       Placeholder Slot
                     </span>
                   )}
                 </div>
-                <h2 className="font-serif-display text-lg font-bold text-[#0B2545] group-hover:text-[#1D4ED8] transition-colors">
+                <h2 className="font-serif-display text-lg font-bold text-[#09090B] group-hover:text-[#27272A] transition-colors">
                   {item.title}
                 </h2>
-                <p className="text-xs text-[#0B2545]/75 mt-1.5 leading-relaxed">
+                <p className="text-xs text-[#09090B]/75 mt-1.5 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -215,14 +215,14 @@ export default function GalleryPage() {
       {/* Lightbox Modal */}
       {selectedItem && (
         <div
-          className="fixed inset-0 z-50 bg-[#0B2545]/85 backdrop-blur-sm flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-[#09090B]/85 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={() => setSelectedItem(null)}
         >
           <div
             className="max-w-3xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl border border-white/20"
             onClick={e => e.stopPropagation()}
           >
-            <div className="relative aspect-[16/10] bg-[#0B2545]">
+            <div className="relative aspect-[16/10] bg-[#09090B]">
               {selectedItem.image_url ? (
                 <img
                   src={selectedItem.image_url}
@@ -238,20 +238,20 @@ export default function GalleryPage() {
               <button
                 type="button"
                 onClick={() => setSelectedItem(null)}
-                className="absolute top-4 right-4 p-2 rounded-full bg-[#0B2545]/80 text-white hover:bg-[#1D4ED8] cursor-pointer"
+                className="absolute top-4 right-4 p-2 rounded-full bg-[#09090B]/80 text-white hover:bg-[#27272A] cursor-pointer"
                 aria-label="Close preview"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
             <div className="p-6">
-              <span className="px-3 py-1 rounded-full bg-[#1D4ED8]/10 text-[#1D4ED8] text-xs font-bold">
+              <span className="px-3 py-1 rounded-full bg-[#27272A]/10 text-[#27272A] text-xs font-bold">
                 {selectedItem.category}
               </span>
-              <h3 className="font-serif-display text-2xl font-bold text-[#0B2545] mt-2">
+              <h3 className="font-serif-display text-2xl font-bold text-[#09090B] mt-2">
                 {selectedItem.title}
               </h3>
-              <p className="text-sm text-[#0B2545]/75 mt-2">{selectedItem.description}</p>
+              <p className="text-sm text-[#09090B]/75 mt-2">{selectedItem.description}</p>
             </div>
           </div>
         </div>
