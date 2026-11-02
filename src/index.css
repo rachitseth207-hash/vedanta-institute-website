@@ -4,21 +4,23 @@
   :root {
     --champagne-gold: #D6B66B;
     --champagne-hover: #C4A255;
-    --champagne-soft: #F9F5EB;
-    --champagne-tint: #F3EBD8;
-    --obsidian-black: #09090B;
-    --charcoal-grey: #18181B;
+    --ink: #111827;
+    --muted: #4B5563;
+    --surface: #F9FAFB;
+    --border-clean: #E5E7EB;
   }
 
   body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #FAF8F3;
-    color: #09090B;
+    background-color: #FFFFFF;
+    color: #111827;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, .font-serif-display {
     font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.015em;
   }
 
   .font-mono-num {
@@ -27,42 +29,20 @@
   }
 }
 
-@keyframes floatSlow {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-6px); }
-}
-
-@keyframes pulseRing {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(214, 182, 107, 0.75); }
-  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(214, 182, 107, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(214, 182, 107, 0); }
-}
-
-.animate-float {
-  animation: floatSlow 5s ease-in-out infinite;
-}
-
-.animate-pulse-gold {
-  animation: pulseRing 2.2s infinite;
-}
-
 .hero-mesh {
-  background-color: #09090B;
-  background-image:
-    radial-gradient(at 82% 18%, rgba(214, 182, 107, 0.28) 0px, transparent 55%),
-    radial-gradient(at 15% 85%, rgba(214, 182, 107, 0.14) 0px, transparent 50%),
-    linear-gradient(135deg, #09090B 0%, #141310 52%, #241F14 100%);
+  background-color: #111827;
+  background-image: linear-gradient(180deg, #111827 0%, #1F2937 100%);
 }
 
 .card-elevated {
   background: #FFFFFF;
-  border: 1px solid rgba(214, 182, 107, 0.28);
-  box-shadow: 0 8px 24px -8px rgba(9, 9, 11, 0.06);
-  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
 }
 
 .card-elevated:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   border-color: #D6B66B;
-  box-shadow: 0 20px 36px -12px rgba(214, 182, 107, 0.22);
+  box-shadow: 0 12px 24px -8px rgba(17, 24, 39, 0.08);
 }

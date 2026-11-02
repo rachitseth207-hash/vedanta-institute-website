@@ -21,7 +21,7 @@ export default function App() {
   return (
     <InstituteProvider>
       <BrowserRouter>
-        <div className="min-h-screen flex flex-col bg-[#FFFFFF] text-[#09090B]">
+        <div className="min-h-screen flex flex-col bg-white text-[#111827]">
           <Navbar />
           <main className="flex-1">
             <Routes>
