@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --oxford-blue: #0B2545;
+    --academic-sapphire: #1D4ED8;
+    --saffron-gold: #F59E0B;
+    --daylight-bg: #F8FAFC;
+    --ice-tint: #EFF6FF;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F8FAFC;
+    color: #0F172A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, .font-serif-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pulseRing {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.75); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulseRing 2.2s infinite;
+}
+
+.hero-mesh {
+  background-color: #0B2545;
+  background-image:
+    radial-gradient(at 82% 18%, rgba(29, 78, 216, 0.55) 0px, transparent 55%),
+    radial-gradient(at 12% 88%, rgba(245, 158, 11, 0.18) 0px, transparent 48%),
+    linear-gradient(135deg, #071A33 0%, #0B2545 50%, #1E3A8A 100%);
+}
+
+.card-elevated {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 8px 24px -8px rgba(11, 37, 69, 0.06);
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card-elevated:hover {
+  transform: translateY(-4px);
+  border-color: #93C5FD;
+  box-shadow: 0 20px 36px -12px rgba(29, 78, 216, 0.14);
+}
