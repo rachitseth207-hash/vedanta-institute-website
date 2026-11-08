@@ -1,6 +1,7 @@
 {
   "name": "vedanta-institute-website",
   "version": "1.0.0",
+  "type": "module",
   "description": "Official Educational Website & Admin Portal for Vedanta Institute, Udhampur (We Guide You to Achieve – Chase Excellence)",
   "main": "server/index.js",
   "scripts": {
